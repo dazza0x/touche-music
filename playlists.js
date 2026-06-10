@@ -31,5 +31,18 @@ const PLAYLISTS = [
       { title: "Salt On Your Skin (Take Two)",    artist: "Touché Sessions", url: "audio/salt-on-your-skin-take-two.mp3" },
       { title: "Glass On The Floor (Take Two)",   artist: "Touché Sessions", url: "audio/glass-on-the-floor-take-two.mp3" }
     ]
+  },
+  {
+    name: "R&B",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+      { title: "Velvet After Midnight",              artist: "Touché Sessions", url: "audio/velvet-after-midnight.mp3" },
+      { title: "Velvet Signal",                      artist: "Touché Sessions", url: "audio/velvet-signal.mp3" },
+      /* alternate takes */
+      { title: "Velvet After Midnight (Take Two)",   artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-two.mp3" },
+      { title: "Velvet Signal (Take Two)",           artist: "Touché Sessions", url: "audio/velvet-signal-take-two.mp3" },
+      { title: "Velvet After Midnight (Take Three)", artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-three.mp3" },
+      { title: "Velvet After Midnight (Take Four)",  artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-four.mp3" }
+    ]
   }
 ];

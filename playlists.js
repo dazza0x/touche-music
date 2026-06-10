@@ -18,8 +18,18 @@ const PLAYLISTS = [
   {
     name: "Easy Listening",
     tracks: [
+      /* first takes — five different tunes before anything repeats */
       { title: "Sunlit Table for Two",            artist: "Touché Sessions", url: "audio/sunlit-table-for-two.mp3" },
-      { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "audio/sunlit-table-for-two-take-two.mp3" }
+      { title: "Paper Cup Sun",                   artist: "Touché Sessions", url: "audio/paper-cup-sun.mp3" },
+      { title: "Paper Lanterns",                  artist: "Touché Sessions", url: "audio/paper-lanterns.mp3" },
+      { title: "Salt On Your Skin",               artist: "Touché Sessions", url: "audio/salt-on-your-skin.mp3" },
+      { title: "Glass On The Floor",              artist: "Touché Sessions", url: "audio/glass-on-the-floor.mp3" },
+      /* alternate takes */
+      { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "audio/sunlit-table-for-two-take-two.mp3" },
+      { title: "Paper Cup Sun (Take Two)",        artist: "Touché Sessions", url: "audio/paper-cup-sun-take-two.mp3" },
+      { title: "Paper Lanterns (Take Two)",       artist: "Touché Sessions", url: "audio/paper-lanterns-take-two.mp3" },
+      { title: "Salt On Your Skin (Take Two)",    artist: "Touché Sessions", url: "audio/salt-on-your-skin-take-two.mp3" },
+      { title: "Glass On The Floor (Take Two)",   artist: "Touché Sessions", url: "audio/glass-on-the-floor-take-two.mp3" }
     ]
   }
 ];

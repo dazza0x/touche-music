@@ -13,6 +13,10 @@
 
    urls can be relative (audio/my-song.mp3 for files in this repo) or
    full https:// links (for files hosted in Cloudflare R2).
+
+   NOTE: keep each track on a single line, exactly like the lines
+   below — the salon PCs' Sonos sync script (salon/sync.ps1) reads
+   this file one line at a time.
    ===================================================================== */
 const PLAYLISTS = [
   {

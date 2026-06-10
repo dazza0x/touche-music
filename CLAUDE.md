@@ -47,6 +47,20 @@ the radio and avoid the ~£600/yr PPL PRS TheMusicLicence fee.
   gold `#b08d4f` (sparing).
 - Aesthetic: warm, editorial, restrained. No heavy shadows or loud gradients.
 
+## Sonos (salon speakers)
+The salon Sonos units (Play:1s — no AirPlay, no Bluetooth, no line-in)
+play the library directly from a shared folder on the salon's
+front-desk PC, controlled via the Sonos app. See `salon/README.md`.
+- `salon/setup.ps1` — one-time admin install on a salon PC
+  (`irm https://music.touchesm.com/salon/setup.ps1 | iex`).
+- `salon/sync.ps1` — scheduled daily; parses playlists.js **one track
+  per line** (keep that format), downloads new MP3s from the live
+  site, rewrites per-genre .m3u files, triggers a Sonos re-index.
+  The salon task re-downloads this script from the site each run, so
+  pushing fixes to the repo updates the salons remotely.
+- `scripts/build-sonos-share.js` — local/manual share builder (node).
+- `salon/help.html` — printable staff cheat sheet.
+
 ## Cache busting
 index.html links styles.css and player.js with a `?v=N` query string —
 bump it whenever either file changes, or GitHub Pages' 10-minute cache

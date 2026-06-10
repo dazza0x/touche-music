@@ -27,6 +27,7 @@ body{
 header{
   text-align:center;
   padding:clamp(20px,4vh,44px) 24px 8px;
+  flex-shrink:0;
 }
 header .wordmark{
   font-family:'Cormorant Garamond',serif;
@@ -51,6 +52,9 @@ nav.playlists{
   overflow-x:auto;
   padding:18px clamp(16px,5vw,56px) 6px;
   scrollbar-width:none;
+  /* scroll containers may be flex-shrunk to nothing — as the track
+     list grew this row was being crushed and the chips clipped */
+  flex-shrink:0;
 }
 nav.playlists::-webkit-scrollbar{display:none}
 .chip{
@@ -83,6 +87,9 @@ main{
   max-width:980px;
   width:100%;
   margin:0 auto;
+  /* allow the track list to scroll inside the page rather than
+     stretching it taller than the screen */
+  min-height:0;
 }
 .now{
   text-align:center;

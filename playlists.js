@@ -25,13 +25,23 @@ const PLAYLISTS = [
       { title: "Salt On Your Skin",               artist: "Touché Sessions", url: "audio/salt-on-your-skin.mp3" },
       { title: "Glass On The Floor",              artist: "Touché Sessions", url: "audio/glass-on-the-floor.mp3" },
       { title: "Mano Extraña",                    artist: "Touché Sessions", url: "audio/mano-extrana.mp3" },
+      { title: "Glass Lemon",                     artist: "Touché Sessions", url: "audio/glass-lemon.mp3" },
+      { title: "Sidewalk Sun",                    artist: "Touché Sessions", url: "audio/sidewalk-sun.mp3" },
+      { title: "Velvet Backseat",                 artist: "Touché Sessions", url: "audio/velvet-backseat.mp3" },
+      { title: "Sal y Coco",                      artist: "Touché Sessions", url: "audio/sal-y-coco.mp3" },
+      { title: "Two PM Lift",                     artist: "Touché Sessions", url: "audio/two-pm-lift.mp3" },
       /* alternate takes */
       { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "audio/sunlit-table-for-two-take-two.mp3" },
       { title: "Paper Cup Sun (Take Two)",        artist: "Touché Sessions", url: "audio/paper-cup-sun-take-two.mp3" },
       { title: "Paper Lanterns (Take Two)",       artist: "Touché Sessions", url: "audio/paper-lanterns-take-two.mp3" },
       { title: "Salt On Your Skin (Take Two)",    artist: "Touché Sessions", url: "audio/salt-on-your-skin-take-two.mp3" },
       { title: "Glass On The Floor (Take Two)",   artist: "Touché Sessions", url: "audio/glass-on-the-floor-take-two.mp3" },
-      { title: "Mano Extraña (Take Two)",         artist: "Touché Sessions", url: "audio/mano-extrana-take-two.mp3" }
+      { title: "Mano Extraña (Take Two)",         artist: "Touché Sessions", url: "audio/mano-extrana-take-two.mp3" },
+      { title: "Glass Lemon (Take Two)",          artist: "Touché Sessions", url: "audio/glass-lemon-take-two.mp3" },
+      { title: "Sidewalk Sun (Take Two)",         artist: "Touché Sessions", url: "audio/sidewalk-sun-take-two.mp3" },
+      { title: "Velvet Backseat (Take Two)",      artist: "Touché Sessions", url: "audio/velvet-backseat-take-two.mp3" },
+      { title: "Sal y Coco (Take Two)",           artist: "Touché Sessions", url: "audio/sal-y-coco-take-two.mp3" },
+      { title: "Two PM Lift (Take Two)",          artist: "Touché Sessions", url: "audio/two-pm-lift-take-two.mp3" }
     ]
   },
   {

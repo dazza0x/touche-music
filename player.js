@@ -163,13 +163,20 @@ audio.addEventListener('error', ()=>{
   if (started) setTimeout(nextTrack, 2000);
 });
 
-/* progress / seek */
+/* progress / seek — while a finger or mouse is on the slider, playback
+   must not move the thumb, or dragging fights the 4-times-a-second
+   timeupdate and the thumb appears to snap away */
+let seeking = false;
+const seekEl = $('seek');
 audio.addEventListener('timeupdate', ()=>{
   $('tCur').textContent = fmt(audio.currentTime);
   $('tEnd').textContent = fmt(audio.duration);
-  if (isFinite(audio.duration)) $('seek').value = (audio.currentTime/audio.duration)*100;
+  if (!seeking && isFinite(audio.duration)) seekEl.value = (audio.currentTime/audio.duration)*100;
 });
-$('seek').addEventListener('input', e=>{
+seekEl.addEventListener('pointerdown',   ()=>{ seeking = true; });
+seekEl.addEventListener('pointerup',     ()=>{ seeking = false; });
+seekEl.addEventListener('pointercancel', ()=>{ seeking = false; });
+seekEl.addEventListener('input', e=>{
   if (isFinite(audio.duration)) audio.currentTime = (e.target.value/100)*audio.duration;
 });
 

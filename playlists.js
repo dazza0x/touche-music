@@ -57,5 +57,26 @@ const PLAYLISTS = [
       { title: "Hands Up Tonight (Take Two)",      artist: "Touché Sessions", url: "audio/hands-up-tonight-take-two.mp3" },
       { title: "Comment Section Heart (Take Two)", artist: "Touché Sessions", url: "audio/comment-section-heart-take-two.mp3" }
     ]
+  },
+  {
+    name: "Ibiza Party",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+      { title: "Hands Up Tonight",                artist: "Touché Sessions", url: "audio/hands-up-tonight.mp3" },
+      { title: "Terraza Dorada",                  artist: "Touché Sessions", url: "audio/terraza-dorada.mp3" },
+      { title: "Hands Up Higher",                 artist: "Touché Sessions", url: "audio/hands-up-higher.mp3" },
+      { title: "Glow Up Tonight",                 artist: "Touché Sessions", url: "audio/glow-up-tonight.mp3" },
+      { title: "Midnight Workhorse",              artist: "Touché Sessions", url: "audio/midnight-workhorse.mp3" },
+      { title: "Tide After the Club",             artist: "Touché Sessions", url: "audio/tide-after-the-club.mp3" },
+      /* alternate takes */
+      { title: "Hands Up Tonight (Take Two)",     artist: "Touché Sessions", url: "audio/hands-up-tonight-take-two.mp3" },
+      { title: "Terraza Dorada (Take Two)",       artist: "Touché Sessions", url: "audio/terraza-dorada-take-two.mp3" },
+      { title: "Hands Up Higher (Take Two)",      artist: "Touché Sessions", url: "audio/hands-up-higher-take-two.mp3" },
+      { title: "Glow Up Tonight (Take Two)",      artist: "Touché Sessions", url: "audio/glow-up-tonight-take-two.mp3" },
+      { title: "Midnight Workhorse (Take Two)",   artist: "Touché Sessions", url: "audio/midnight-workhorse-take-two.mp3" },
+      { title: "Tide After the Club (Take Two)",  artist: "Touché Sessions", url: "audio/tide-after-the-club-take-two.mp3" },
+      { title: "Hands Up Higher (Take Three)",    artist: "Touché Sessions", url: "audio/hands-up-higher-take-three.mp3" },
+      { title: "Hands Up Higher (Take Four)",     artist: "Touché Sessions", url: "audio/hands-up-higher-take-four.mp3" }
+    ]
   }
 ];

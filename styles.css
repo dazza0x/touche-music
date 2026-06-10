@@ -205,6 +205,37 @@ main{
   border-radius:50%;
   background:var(--sage);
 }
+
+/* ---------- volume (desktop only — iPads use hardware/Sonos volume) ---------- */
+.volume{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-left:14px;
+}
+.volume svg{
+  width:18px;height:18px;
+  fill:var(--ink-soft);
+  flex-shrink:0;
+}
+.volume input[type=range]{
+  flex:0 0 110px;
+  -webkit-appearance:none;
+  appearance:none;
+  height:3px;
+  background:var(--line);
+  border-radius:2px;
+  cursor:pointer;
+}
+.volume input[type=range]::-webkit-slider-thumb{
+  -webkit-appearance:none;
+  width:14px;height:14px;
+  border-radius:50%;
+  background:var(--sage);
+}
+@media (max-width:640px){
+  .volume{display:none}
+}
 .controls{
   display:flex;
   align-items:center;

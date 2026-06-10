@@ -41,6 +41,10 @@
     <span id="tCur">0:00</span>
     <input type="range" id="seek" min="0" max="100" value="0" aria-label="Seek">
     <span id="tEnd">0:00</span>
+    <div class="volume" id="volWrap">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+      <input type="range" id="vol" min="0" max="100" value="100" aria-label="Volume">
+    </div>
   </div>
   <div class="controls">
     <button class="ctl toggle" id="shuffleBtn" aria-label="Shuffle" title="Shuffle">

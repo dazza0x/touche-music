@@ -173,6 +173,23 @@ $('seek').addEventListener('input', e=>{
   if (isFinite(audio.duration)) audio.currentTime = (e.target.value/100)*audio.duration;
 });
 
+/* volume — works in desktop browsers. iPads and iPhones ignore software
+   volume entirely (Apple reserves it for the hardware buttons and the
+   Sonos/AirPlay target), so the slider is hidden there rather than
+   shown broken. The chosen level is remembered between visits. */
+const isAppleTouch = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+if (isAppleTouch){
+  $('volWrap').style.display = 'none';
+} else {
+  const saved = parseFloat(localStorage.getItem('touche-volume'));
+  if (!isNaN(saved)){ audio.volume = saved; $('vol').value = saved*100; }
+  $('vol').addEventListener('input', e=>{
+    audio.volume = e.target.value/100;
+    localStorage.setItem('touche-volume', audio.volume);
+  });
+}
+
 /* lock-screen / control-centre buttons (Media Session API) */
 if ('mediaSession' in navigator){
   navigator.mediaSession.setActionHandler('play',  ()=>audio.play());

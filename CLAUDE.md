@@ -47,6 +47,13 @@ the radio and avoid the ~£600/yr PPL PRS TheMusicLicence fee.
   gold `#b08d4f` (sparing).
 - Aesthetic: warm, editorial, restrained. No heavy shadows or loud gradients.
 
+## Cache busting
+index.html links styles.css and player.js with a `?v=N` query string —
+bump it whenever either file changes, or GitHub Pages' 10-minute cache
+can serve new HTML with stale CSS/JS (seen as an unstyled volume icon).
+playlists.js is deliberately unversioned: the owner edits it via the
+GitHub web UI, and a 10-minute-stale playlist fails gracefully.
+
 ## Testing locally
 Serve over HTTP (e.g. `python -m http.server`) rather than opening
 index.html directly — the audio and service worker behave properly that way.

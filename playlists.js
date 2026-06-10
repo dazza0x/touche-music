@@ -44,5 +44,16 @@ const PLAYLISTS = [
       { title: "Velvet After Midnight (Take Three)", artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-three.mp3" },
       { title: "Velvet After Midnight (Take Four)",  artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-four.mp3" }
     ]
+  },
+  {
+    name: "Upbeat Pop",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+      { title: "Hands Up Tonight",                 artist: "Touché Sessions", url: "audio/hands-up-tonight.mp3" },
+      { title: "Comment Section Heart",            artist: "Touché Sessions", url: "audio/comment-section-heart.mp3" },
+      /* alternate takes */
+      { title: "Hands Up Tonight (Take Two)",      artist: "Touché Sessions", url: "audio/hands-up-tonight-take-two.mp3" },
+      { title: "Comment Section Heart (Take Two)", artist: "Touché Sessions", url: "audio/comment-section-heart-take-two.mp3" }
+    ]
   }
 ];

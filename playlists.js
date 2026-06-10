@@ -140,13 +140,25 @@ const PLAYLISTS = [
       { title: "Mirrorball Trouble",              artist: "Touché Sessions", url: "audio/mirrorball-trouble.mp3" },
       { title: "Tailgate Ghost",                  artist: "Touché Sessions", url: "audio/tailgate-ghost.mp3" },
       { title: "Tape on My Thumb",                artist: "Touché Sessions", url: "audio/tape-on-my-thumb.mp3" },
+      { title: "Paper Planes Flying",             artist: "Touché Sessions", url: "audio/paper-planes-flying.mp3" },
+      { title: "Paper Planes at Midnight",        artist: "Touché Sessions", url: "audio/paper-planes-at-midnight.mp3" },
+      { title: "Neon Halo",                       artist: "Touché Sessions", url: "audio/neon-halo.mp3" },
+      { title: "River Runs",                      artist: "Touché Sessions", url: "audio/river-runs.mp3" },
+      { title: "Economy of the Night",            artist: "Touché Sessions", url: "audio/economy-of-the-night.mp3" },
+      { title: "Night Economy",                   artist: "Touché Sessions", url: "audio/night-economy.mp3" },
+      { title: "Midnight Economy",                artist: "Touché Sessions", url: "audio/midnight-economy.mp3" },
+      { title: "Back Home Somewhere",             artist: "Touché Sessions", url: "audio/back-home-somewhere.mp3" },
+      { title: "Somewhere Back Home",             artist: "Touché Sessions", url: "audio/somewhere-back-home.mp3" },
       /* alternate takes */
       { title: "Boots On the Hill (Take Two)",    artist: "Touché Sessions", url: "audio/boots-on-the-hill-take-two.mp3" },
       { title: "Cardigan Embers (Take Two)",      artist: "Touché Sessions", url: "audio/cardigan-embers-take-two.mp3" },
       { title: "Glass Confetti (Take Two)",       artist: "Touché Sessions", url: "audio/glass-confetti-take-two.mp3" },
       { title: "Mirrorball Trouble (Take Two)",   artist: "Touché Sessions", url: "audio/mirrorball-trouble-take-two.mp3" },
       { title: "Tailgate Ghost (Take Two)",       artist: "Touché Sessions", url: "audio/tailgate-ghost-take-two.mp3" },
-      { title: "Tape on My Thumb (Take Two)",     artist: "Touché Sessions", url: "audio/tape-on-my-thumb-take-two.mp3" }
+      { title: "Tape on My Thumb (Take Two)",     artist: "Touché Sessions", url: "audio/tape-on-my-thumb-take-two.mp3" },
+      { title: "Neon Halo (Take Two)",            artist: "Touché Sessions", url: "audio/neon-halo-take-two.mp3" },
+      { title: "River Runs (Take Two)",           artist: "Touché Sessions", url: "audio/river-runs-take-two.mp3" },
+      { title: "River Runs (Take Three)",         artist: "Touché Sessions", url: "audio/river-runs-take-three.mp3" }
     ]
   },
   {

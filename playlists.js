@@ -104,5 +104,66 @@ const PLAYLISTS = [
       { title: "Hands Up Higher (Take Three)",    artist: "Touché Sessions", url: "audio/hands-up-higher-take-three.mp3" },
       { title: "Hands Up Higher (Take Four)",     artist: "Touché Sessions", url: "audio/hands-up-higher-take-four.mp3" }
     ]
+  },
+  {
+    name: "Art Reject",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+      { title: "Blindside Glow",                  artist: "Touché Sessions", url: "audio/blindside-glow.mp3" },
+      { title: "Glowstick Weekend",               artist: "Touché Sessions", url: "audio/glowstick-weekend.mp3" },
+      { title: "Library Card Sunset",             artist: "Touché Sessions", url: "audio/library-card-sunset.mp3" },
+      { title: "Mirror Shake",                    artist: "Touché Sessions", url: "audio/mirror-shake.mp3" },
+      { title: "Mirrorball Pulse",                artist: "Touché Sessions", url: "audio/mirrorball-pulse.mp3" },
+      { title: "Museum Floor",                    artist: "Touché Sessions", url: "audio/museum-floor.mp3" },
+      { title: "Palm Wine Radar",                 artist: "Touché Sessions", url: "audio/palm-wine-radar.mp3" },
+      { title: "Plastic Lemon Halo",              artist: "Touché Sessions", url: "audio/plastic-lemon-halo.mp3" },
+      { title: "Plastic Palm Parade",             artist: "Touché Sessions", url: "audio/plastic-palm-parade.mp3" },
+      /* alternate takes */
+      { title: "Blindside Glow (Take Two)",       artist: "Touché Sessions", url: "audio/blindside-glow-take-two.mp3" },
+      { title: "Glowstick Weekend (Take Two)",    artist: "Touché Sessions", url: "audio/glowstick-weekend-take-two.mp3" },
+      { title: "Library Card Sunset (Take Two)",  artist: "Touché Sessions", url: "audio/library-card-sunset-take-two.mp3" },
+      { title: "Mirror Shake (Take Two)",         artist: "Touché Sessions", url: "audio/mirror-shake-take-two.mp3" },
+      { title: "Mirrorball Pulse (Take Two)",     artist: "Touché Sessions", url: "audio/mirrorball-pulse-take-two.mp3" },
+      { title: "Museum Floor (Take Two)",         artist: "Touché Sessions", url: "audio/museum-floor-take-two.mp3" },
+      { title: "Palm Wine Radar (Take Two)",      artist: "Touché Sessions", url: "audio/palm-wine-radar-take-two.mp3" },
+      { title: "Plastic Lemon Halo (Take Two)",   artist: "Touché Sessions", url: "audio/plastic-lemon-halo-take-two.mp3" },
+      { title: "Plastic Palm Parade (Take Two)",  artist: "Touché Sessions", url: "audio/plastic-palm-parade-take-two.mp3" }
+    ]
+  },
+  {
+    name: "The Radio",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+      { title: "Boots On the Hill",               artist: "Touché Sessions", url: "audio/boots-on-the-hill.mp3" },
+      { title: "Cardigan Embers",                 artist: "Touché Sessions", url: "audio/cardigan-embers.mp3" },
+      { title: "Glass Confetti",                  artist: "Touché Sessions", url: "audio/glass-confetti.mp3" },
+      { title: "Mirrorball Trouble",              artist: "Touché Sessions", url: "audio/mirrorball-trouble.mp3" },
+      { title: "Tailgate Ghost",                  artist: "Touché Sessions", url: "audio/tailgate-ghost.mp3" },
+      { title: "Tape on My Thumb",                artist: "Touché Sessions", url: "audio/tape-on-my-thumb.mp3" },
+      /* alternate takes */
+      { title: "Boots On the Hill (Take Two)",    artist: "Touché Sessions", url: "audio/boots-on-the-hill-take-two.mp3" },
+      { title: "Cardigan Embers (Take Two)",      artist: "Touché Sessions", url: "audio/cardigan-embers-take-two.mp3" },
+      { title: "Glass Confetti (Take Two)",       artist: "Touché Sessions", url: "audio/glass-confetti-take-two.mp3" },
+      { title: "Mirrorball Trouble (Take Two)",   artist: "Touché Sessions", url: "audio/mirrorball-trouble-take-two.mp3" },
+      { title: "Tailgate Ghost (Take Two)",       artist: "Touché Sessions", url: "audio/tailgate-ghost-take-two.mp3" },
+      { title: "Tape on My Thumb (Take Two)",     artist: "Touché Sessions", url: "audio/tape-on-my-thumb-take-two.mp3" }
+    ]
+  },
+  {
+    name: "Indie Pop",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+      { title: "Back From The Bar",               artist: "Touché Sessions", url: "audio/back-from-the-bar.mp3" },
+      { title: "Broken Mirror Floor",             artist: "Touché Sessions", url: "audio/broken-mirror-floor.mp3" },
+      { title: "Last Call Parade",                artist: "Touché Sessions", url: "audio/last-call-parade.mp3" },
+      { title: "Pint Glass Parade",               artist: "Touché Sessions", url: "audio/pint-glass-parade.mp3" },
+      { title: "Velvet Spill",                    artist: "Touché Sessions", url: "audio/velvet-spill.mp3" },
+      /* alternate takes */
+      { title: "Back From The Bar (Take Two)",    artist: "Touché Sessions", url: "audio/back-from-the-bar-take-two.mp3" },
+      { title: "Broken Mirror Floor (Take Two)",  artist: "Touché Sessions", url: "audio/broken-mirror-floor-take-two.mp3" },
+      { title: "Last Call Parade (Take Two)",     artist: "Touché Sessions", url: "audio/last-call-parade-take-two.mp3" },
+      { title: "Pint Glass Parade (Take Two)",    artist: "Touché Sessions", url: "audio/pint-glass-parade-take-two.mp3" },
+      { title: "Velvet Spill (Take Two)",         artist: "Touché Sessions", url: "audio/velvet-spill-take-two.mp3" }
+    ]
   }
 ];

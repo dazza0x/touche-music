@@ -30,6 +30,14 @@ const PLAYLISTS = [
       { title: "Velvet Backseat",                 artist: "Touché Sessions", url: "audio/velvet-backseat.mp3" },
       { title: "Sal y Coco",                      artist: "Touché Sessions", url: "audio/sal-y-coco.mp3" },
       { title: "Two PM Lift",                     artist: "Touché Sessions", url: "audio/two-pm-lift.mp3" },
+      { title: "Blindside Glow",                  artist: "Touché Sessions", url: "audio/blindside-glow.mp3" },
+      { title: "Mirror Shake",                    artist: "Touché Sessions", url: "audio/mirror-shake.mp3" },
+      { title: "Mirrorball Pulse",                artist: "Touché Sessions", url: "audio/mirrorball-pulse.mp3" },
+      { title: "Paper Sun",                       artist: "Touché Sessions", url: "audio/paper-sun.mp3" },
+      { title: "Easy Swaying",                    artist: "Touché Sessions", url: "audio/easy-swaying.mp3" },
+      { title: "Coffee In Hand",                  artist: "Touché Sessions", url: "audio/coffee-in-hand.mp3" },
+      { title: "Lemon on My Tongue",              artist: "Touché Sessions", url: "audio/lemon-on-my-tongue.mp3" },
+      { title: "Sunrise On Air",                  artist: "Touché Sessions", url: "audio/sunrise-on-air.mp3" },
       /* alternate takes */
       { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "audio/sunlit-table-for-two-take-two.mp3" },
       { title: "Paper Cup Sun (Take Two)",        artist: "Touché Sessions", url: "audio/paper-cup-sun-take-two.mp3" },
@@ -41,7 +49,15 @@ const PLAYLISTS = [
       { title: "Sidewalk Sun (Take Two)",         artist: "Touché Sessions", url: "audio/sidewalk-sun-take-two.mp3" },
       { title: "Velvet Backseat (Take Two)",      artist: "Touché Sessions", url: "audio/velvet-backseat-take-two.mp3" },
       { title: "Sal y Coco (Take Two)",           artist: "Touché Sessions", url: "audio/sal-y-coco-take-two.mp3" },
-      { title: "Two PM Lift (Take Two)",          artist: "Touché Sessions", url: "audio/two-pm-lift-take-two.mp3" }
+      { title: "Two PM Lift (Take Two)",          artist: "Touché Sessions", url: "audio/two-pm-lift-take-two.mp3" },
+      { title: "Blindside Glow (Take Two)",       artist: "Touché Sessions", url: "audio/blindside-glow-take-two.mp3" },
+      { title: "Mirror Shake (Take Two)",         artist: "Touché Sessions", url: "audio/mirror-shake-take-two.mp3" },
+      { title: "Mirrorball Pulse (Take Two)",     artist: "Touché Sessions", url: "audio/mirrorball-pulse-take-two.mp3" },
+      { title: "Paper Sun (Take Two)",            artist: "Touché Sessions", url: "audio/paper-sun-take-two.mp3" },
+      { title: "Easy Swaying (Take Two)",         artist: "Touché Sessions", url: "audio/easy-swaying-take-two.mp3" },
+      { title: "Coffee In Hand (Take Two)",       artist: "Touché Sessions", url: "audio/coffee-in-hand-take-two.mp3" },
+      { title: "Lemon on My Tongue (Take Two)",   artist: "Touché Sessions", url: "audio/lemon-on-my-tongue-take-two.mp3" },
+      { title: "Sunrise On Air (Take Two)",       artist: "Touché Sessions", url: "audio/sunrise-on-air-take-two.mp3" }
     ]
   },
   {

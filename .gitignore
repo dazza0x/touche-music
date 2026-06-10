@@ -1,0 +1,6 @@
+# local tooling
+.claude/
+
+# OS clutter
+Thumbs.db
+.DS_Store

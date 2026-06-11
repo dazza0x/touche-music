@@ -227,7 +227,13 @@ const PLAYLISTS = [
       { title: "Sky High at 174 (Dance)", artist: "Touché Sessions", url: "https://audio.touchesm.com/sky-high-at-174-dance.mp3" },
       { title: "Sky High at 174", artist: "Touché Sessions", url: "https://audio.touchesm.com/sky-high-at-174.mp3" },
       { title: "Skyline at 174 (Full version)", artist: "Touché Sessions", url: "https://audio.touchesm.com/skyline-at-174-full-version.mp3" },
-      { title: "Skyline at 174", artist: "Touché Sessions", url: "https://audio.touchesm.com/skyline-at-174.mp3" }
+      { title: "Skyline at 174", artist: "Touché Sessions", url: "https://audio.touchesm.com/skyline-at-174.mp3" },
+      { title: "Concrete Hymn Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/concrete-hymn-remix.mp3" },
+      { title: "Concrete Hymn", artist: "Touché Sessions", url: "https://audio.touchesm.com/concrete-hymn.mp3" },
+      { title: "Night Bus Romance Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/night-bus-romance-remix.mp3" },
+      { title: "Night Bus Romance", artist: "Touché Sessions", url: "https://audio.touchesm.com/night-bus-romance.mp3" },
+      { title: "Out of Season Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/out-of-season-remix.mp3" },
+      { title: "Out of Season", artist: "Touché Sessions", url: "https://audio.touchesm.com/out-of-season.mp3" }
     ]
   }
 ];

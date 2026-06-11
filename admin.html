@@ -446,9 +446,15 @@ function doMove(pi, ti, target){
   const src = model[pi], dst = model[target];
   const [t] = src.tracks.splice(ti, 1);
   if (ti < src.altBoundary) src.altBoundary--;
-  if (isAlternate(t.title)) dst.tracks.push(t);
-  else dst.tracks.splice(dst.altBoundary++, 0, t);
+  /* a cross-listed song may already be in the target — merge rather
+     than create a second entry */
+  const already = dst.tracks.some(x => x.url === t.url);
+  if (!already){
+    if (isAlternate(t.title)) dst.tracks.push(t);
+    else dst.tracks.splice(dst.altBoundary++, 0, t);
+  }
   dirty++; closeModal(); viewConsole();
+  if (already) alert(`“${t.title}” was already in ${dst.name}, so the two entries were merged into one.`);
 }
 function askRename(pi, ti){
   const t = model[pi].tracks[ti];
@@ -525,6 +531,10 @@ async function doUpload(pi){
       }
       const t = { title: r.plan.title, artist: ARTIST, url: AUDIO_BASE + r.plan.key };
       const dst = model[pi];
+      if (dst.tracks.some(x => x.url === t.url)){
+        st.textContent = 'already in this playlist — skipped';
+        continue;
+      }
       if (isAlternate(t.title)) dst.tracks.push(t);
       else dst.tracks.splice(dst.altBoundary++, 0, t);
       dirty++; ok++;

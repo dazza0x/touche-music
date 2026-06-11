@@ -65,7 +65,6 @@ const PLAYLISTS = [
       { title: "Delete Your Number", artist: "Touché Sessions", url: "https://audio.touchesm.com/delete-your-number.mp3" },
       { title: "Last Train Out", artist: "Touché Sessions", url: "https://audio.touchesm.com/last-train-out.mp3" },
       { title: "Glowstick Weekend", artist: "Touché Sessions", url: "https://audio.touchesm.com/glowstick-weekend.mp3" },
-      { title: "Mirrorball Pulse", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirrorball-pulse.mp3" },
       /* alternate takes and remixes */
       { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/sunlit-table-for-two-take-two.mp3" },
       { title: "Paper Cup Sun (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-cup-sun-take-two.mp3" },

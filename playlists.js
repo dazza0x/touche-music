@@ -153,6 +153,11 @@ const PLAYLISTS = [
       { title: "Midnight Economy",                artist: "Touché Sessions", url: "audio/midnight-economy.mp3" },
       { title: "Back Home Somewhere",             artist: "Touché Sessions", url: "audio/back-home-somewhere.mp3" },
       { title: "Somewhere Back Home",             artist: "Touché Sessions", url: "audio/somewhere-back-home.mp3" },
+      { title: "Gold Rush Heart",                 artist: "Touché Sessions", url: "audio/gold-rush-heart.mp3" },
+      { title: "Best Served Cold",                artist: "Touché Sessions", url: "audio/best-served-cold.mp3" },
+      { title: "Polaroid Summer",                 artist: "Touché Sessions", url: "audio/polaroid-summer.mp3" },
+      { title: "Delete Your Number",              artist: "Touché Sessions", url: "audio/delete-your-number.mp3" },
+      { title: "Last Train Out",                  artist: "Touché Sessions", url: "audio/last-train-out.mp3" },
       /* alternate takes */
       { title: "Boots On the Hill (Take Two)",    artist: "Touché Sessions", url: "audio/boots-on-the-hill-take-two.mp3" },
       { title: "Cardigan Embers (Take Two)",      artist: "Touché Sessions", url: "audio/cardigan-embers-take-two.mp3" },
@@ -162,7 +167,10 @@ const PLAYLISTS = [
       { title: "Tape on My Thumb (Take Two)",     artist: "Touché Sessions", url: "audio/tape-on-my-thumb-take-two.mp3" },
       { title: "Neon Halo (Take Two)",            artist: "Touché Sessions", url: "audio/neon-halo-take-two.mp3" },
       { title: "River Runs (Take Two)",           artist: "Touché Sessions", url: "audio/river-runs-take-two.mp3" },
-      { title: "River Runs (Take Three)",         artist: "Touché Sessions", url: "audio/river-runs-take-three.mp3" }
+      { title: "River Runs (Take Three)",         artist: "Touché Sessions", url: "audio/river-runs-take-three.mp3" },
+      { title: "Best Served Cold (Remix)",        artist: "Touché Sessions", url: "audio/best-served-cold-remix.mp3" },
+      { title: "Delete Your Number (Remix)",      artist: "Touché Sessions", url: "audio/delete-your-number-remix.mp3" },
+      { title: "Last Train Out (Remix)",          artist: "Touché Sessions", url: "audio/last-train-out-remix.mp3" }
     ]
   },
   {

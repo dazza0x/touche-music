@@ -36,6 +36,14 @@ the radio and avoid the ~£600/yr PPL PRS TheMusicLicence fee.
 - `player.js` — player logic (shuffle bag, auto-advance, error-skip,
   Media Session, SW registration)
 - `playlists.js` — the only file edited day-to-day
+- `admin.html` — self-contained owner console (move/rename/remove songs,
+  upload MP3s). Serverless: edits playlists.js via the GitHub Contents
+  API and uploads to R2 with browser-side SigV4; both tokens live only
+  on the owner's devices, AES-GCM-encrypted under a passphrase
+  (localStorage key `touche-admin-vault`). Its regenerator preserves
+  the playlists.js header comment and one-track-per-line format the
+  salon sync depends on. R2 bucket needs a CORS rule allowing PUT/HEAD
+  from https://music.touchesm.com.
 - `sw.js`, `manifest.json`, `icons/` — PWA
 - `CNAME` — custom domain for GitHub Pages
 - `README.md` — owner-facing setup & "add a track" instructions (keep these
@@ -79,8 +87,5 @@ Serve over HTTP (e.g. `python -m http.server`) rather than opening
 index.html directly — the audio and service worker behave properly that way.
 
 ## Remaining nice-to-haves (discussed, not yet built)
-- Admin "move songs between genres" screen — static page committing
-  playlists.js via the GitHub Contents API with an owner-held
-  fine-grained PAT (next planned piece of work).
 - "Quiet mode" preset for late afternoon.
 - Per-salon playlist sets (Caterham / Purley).

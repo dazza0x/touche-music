@@ -215,5 +215,28 @@ const PLAYLISTS = [
       { title: "Midnight Freight (Instrumental)",            artist: "Touché Sessions", url: "audio/midnight-freight-instrumental.mp3" },
       { title: "Midnight Freight (Instrumental Remix)",      artist: "Touché Sessions", url: "audio/midnight-freight-instrumental-remix.mp3" }
     ]
+  },
+  {
+    name: "Indie Britpop",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+      { title: "Empty Pavement",                  artist: "Touché Sessions", url: "audio/empty-pavement.mp3" },
+      { title: "Velvet Backseat Crown",           artist: "Touché Sessions", url: "audio/velvet-backseat-crown.mp3" },
+      { title: "Turn The Corner",                 artist: "Touché Sessions", url: "audio/turn-the-corner.mp3" },
+      { title: "Neon Lump Throat",                artist: "Touché Sessions", url: "audio/neon-lump-throat.mp3" },
+      { title: "Saturday On Deansgate",           artist: "Touché Sessions", url: "audio/saturday-on-deansgate.mp3" },
+      { title: "Pint Glass Skies",                artist: "Touché Sessions", url: "audio/pint-glass-skies.mp3" },
+      { title: "Paper Crown",                     artist: "Touché Sessions", url: "audio/paper-crown.mp3" },
+      { title: "Backdoor Sunday",                 artist: "Touché Sessions", url: "audio/backdoor-sunday.mp3" },
+      { title: "Kettle's On",                     artist: "Touché Sessions", url: "audio/kettles-on.mp3" },
+      { title: "Velvet Backseat Frown",           artist: "Touché Sessions", url: "audio/velvet-backseat-frown.mp3" },
+      { title: "Saturday On Deansgate (Smashed)", artist: "Touché Sessions", url: "audio/saturday-on-deansgate-smashed.mp3" },
+      { title: "Pint Glass Skies (Again)",        artist: "Touché Sessions", url: "audio/pint-glass-skies-again.mp3" },
+      /* alternate takes and remixes */
+      { title: "Paper Crown (Take Two)",          artist: "Touché Sessions", url: "audio/paper-crown-take-two.mp3" },
+      { title: "Backdoor Sunday (Take Two)",      artist: "Touché Sessions", url: "audio/backdoor-sunday-take-two.mp3" },
+      { title: "Empty Pavement (Remix)",          artist: "Touché Sessions", url: "audio/empty-pavement-remix.mp3" },
+      { title: "Kettle's On (Remix)",             artist: "Touché Sessions", url: "audio/kettles-on-remix.mp3" }
+    ]
   }
 ];

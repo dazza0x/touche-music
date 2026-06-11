@@ -64,6 +64,7 @@ const PLAYLISTS = [
       { title: "Polaroid Summer", artist: "Touché Sessions", url: "https://audio.touchesm.com/polaroid-summer.mp3" },
       { title: "Delete Your Number", artist: "Touché Sessions", url: "https://audio.touchesm.com/delete-your-number.mp3" },
       { title: "Last Train Out", artist: "Touché Sessions", url: "https://audio.touchesm.com/last-train-out.mp3" },
+      { title: "Glowstick Weekend", artist: "Touché Sessions", url: "https://audio.touchesm.com/glowstick-weekend.mp3" },
       /* alternate takes and remixes */
       { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/sunlit-table-for-two-take-two.mp3" },
       { title: "Paper Cup Sun (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-cup-sun-take-two.mp3" },
@@ -139,7 +140,6 @@ const PLAYLISTS = [
     name: "Indie Sounds",
     tracks: [
       /* first takes — different tunes before anything repeats */
-      { title: "Glowstick Weekend", artist: "Touché Sessions", url: "https://audio.touchesm.com/glowstick-weekend.mp3" },
       { title: "Library Card Sunset", artist: "Touché Sessions", url: "https://audio.touchesm.com/library-card-sunset.mp3" },
       { title: "Mirror Shake", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirror-shake.mp3" },
       { title: "Mirrorball Pulse", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirrorball-pulse.mp3" },

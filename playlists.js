@@ -65,6 +65,7 @@ const PLAYLISTS = [
       { title: "Delete Your Number", artist: "Touché Sessions", url: "https://audio.touchesm.com/delete-your-number.mp3" },
       { title: "Last Train Out", artist: "Touché Sessions", url: "https://audio.touchesm.com/last-train-out.mp3" },
       { title: "Glowstick Weekend", artist: "Touché Sessions", url: "https://audio.touchesm.com/glowstick-weekend.mp3" },
+      { title: "Mirrorball Pulse", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirrorball-pulse.mp3" },
       /* alternate takes and remixes */
       { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/sunlit-table-for-two-take-two.mp3" },
       { title: "Paper Cup Sun (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-cup-sun-take-two.mp3" },
@@ -142,7 +143,6 @@ const PLAYLISTS = [
       /* first takes — different tunes before anything repeats */
       { title: "Library Card Sunset", artist: "Touché Sessions", url: "https://audio.touchesm.com/library-card-sunset.mp3" },
       { title: "Mirror Shake", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirror-shake.mp3" },
-      { title: "Mirrorball Pulse", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirrorball-pulse.mp3" },
       { title: "Museum Floor", artist: "Touché Sessions", url: "https://audio.touchesm.com/museum-floor.mp3" },
       { title: "Palm Wine Radar", artist: "Touché Sessions", url: "https://audio.touchesm.com/palm-wine-radar.mp3" },
       { title: "Plastic Lemon Halo", artist: "Touché Sessions", url: "https://audio.touchesm.com/plastic-lemon-halo.mp3" },

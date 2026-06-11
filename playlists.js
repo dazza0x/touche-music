@@ -110,7 +110,7 @@ const PLAYLISTS = [
     ]
   },
   {
-    name: "Art Reject",
+    name: "Indie Sounds",
     tracks: [
       /* first takes — different tunes before anything repeats */
       { title: "Blindside Glow",                  artist: "Touché Sessions", url: "audio/blindside-glow.mp3" },
@@ -122,7 +122,24 @@ const PLAYLISTS = [
       { title: "Palm Wine Radar",                 artist: "Touché Sessions", url: "audio/palm-wine-radar.mp3" },
       { title: "Plastic Lemon Halo",              artist: "Touché Sessions", url: "audio/plastic-lemon-halo.mp3" },
       { title: "Plastic Palm Parade",             artist: "Touché Sessions", url: "audio/plastic-palm-parade.mp3" },
-      /* alternate takes */
+      { title: "Empty Pavement",                  artist: "Touché Sessions", url: "audio/empty-pavement.mp3" },
+      { title: "Velvet Backseat Crown",           artist: "Touché Sessions", url: "audio/velvet-backseat-crown.mp3" },
+      { title: "Turn The Corner",                 artist: "Touché Sessions", url: "audio/turn-the-corner.mp3" },
+      { title: "Neon Lump Throat",                artist: "Touché Sessions", url: "audio/neon-lump-throat.mp3" },
+      { title: "Saturday On Deansgate",           artist: "Touché Sessions", url: "audio/saturday-on-deansgate.mp3" },
+      { title: "Pint Glass Skies",                artist: "Touché Sessions", url: "audio/pint-glass-skies.mp3" },
+      { title: "Paper Crown",                     artist: "Touché Sessions", url: "audio/paper-crown.mp3" },
+      { title: "Backdoor Sunday",                 artist: "Touché Sessions", url: "audio/backdoor-sunday.mp3" },
+      { title: "Kettle's On",                     artist: "Touché Sessions", url: "audio/kettles-on.mp3" },
+      { title: "Velvet Backseat Frown",           artist: "Touché Sessions", url: "audio/velvet-backseat-frown.mp3" },
+      { title: "Saturday On Deansgate (Smashed)", artist: "Touché Sessions", url: "audio/saturday-on-deansgate-smashed.mp3" },
+      { title: "Pint Glass Skies (Again)",        artist: "Touché Sessions", url: "audio/pint-glass-skies-again.mp3" },
+      { title: "Back From The Bar",               artist: "Touché Sessions", url: "audio/back-from-the-bar.mp3" },
+      { title: "Broken Mirror Floor",             artist: "Touché Sessions", url: "audio/broken-mirror-floor.mp3" },
+      { title: "Last Call Parade",                artist: "Touché Sessions", url: "audio/last-call-parade.mp3" },
+      { title: "Pint Glass Parade",               artist: "Touché Sessions", url: "audio/pint-glass-parade.mp3" },
+      { title: "Velvet Spill",                    artist: "Touché Sessions", url: "audio/velvet-spill.mp3" },
+      /* alternate takes and remixes */
       { title: "Blindside Glow (Take Two)",       artist: "Touché Sessions", url: "audio/blindside-glow-take-two.mp3" },
       { title: "Glowstick Weekend (Take Two)",    artist: "Touché Sessions", url: "audio/glowstick-weekend-take-two.mp3" },
       { title: "Library Card Sunset (Take Two)",  artist: "Touché Sessions", url: "audio/library-card-sunset-take-two.mp3" },
@@ -131,7 +148,16 @@ const PLAYLISTS = [
       { title: "Museum Floor (Take Two)",         artist: "Touché Sessions", url: "audio/museum-floor-take-two.mp3" },
       { title: "Palm Wine Radar (Take Two)",      artist: "Touché Sessions", url: "audio/palm-wine-radar-take-two.mp3" },
       { title: "Plastic Lemon Halo (Take Two)",   artist: "Touché Sessions", url: "audio/plastic-lemon-halo-take-two.mp3" },
-      { title: "Plastic Palm Parade (Take Two)",  artist: "Touché Sessions", url: "audio/plastic-palm-parade-take-two.mp3" }
+      { title: "Plastic Palm Parade (Take Two)",  artist: "Touché Sessions", url: "audio/plastic-palm-parade-take-two.mp3" },
+      { title: "Paper Crown (Take Two)",          artist: "Touché Sessions", url: "audio/paper-crown-take-two.mp3" },
+      { title: "Backdoor Sunday (Take Two)",      artist: "Touché Sessions", url: "audio/backdoor-sunday-take-two.mp3" },
+      { title: "Empty Pavement (Remix)",          artist: "Touché Sessions", url: "audio/empty-pavement-remix.mp3" },
+      { title: "Kettle's On (Remix)",             artist: "Touché Sessions", url: "audio/kettles-on-remix.mp3" },
+      { title: "Back From The Bar (Take Two)",    artist: "Touché Sessions", url: "audio/back-from-the-bar-take-two.mp3" },
+      { title: "Broken Mirror Floor (Take Two)",  artist: "Touché Sessions", url: "audio/broken-mirror-floor-take-two.mp3" },
+      { title: "Last Call Parade (Take Two)",     artist: "Touché Sessions", url: "audio/last-call-parade-take-two.mp3" },
+      { title: "Pint Glass Parade (Take Two)",    artist: "Touché Sessions", url: "audio/pint-glass-parade-take-two.mp3" },
+      { title: "Velvet Spill (Take Two)",         artist: "Touché Sessions", url: "audio/velvet-spill-take-two.mp3" }
     ]
   },
   {
@@ -174,23 +200,6 @@ const PLAYLISTS = [
     ]
   },
   {
-    name: "Indie Pop",
-    tracks: [
-      /* first takes — different tunes before anything repeats */
-      { title: "Back From The Bar",               artist: "Touché Sessions", url: "audio/back-from-the-bar.mp3" },
-      { title: "Broken Mirror Floor",             artist: "Touché Sessions", url: "audio/broken-mirror-floor.mp3" },
-      { title: "Last Call Parade",                artist: "Touché Sessions", url: "audio/last-call-parade.mp3" },
-      { title: "Pint Glass Parade",               artist: "Touché Sessions", url: "audio/pint-glass-parade.mp3" },
-      { title: "Velvet Spill",                    artist: "Touché Sessions", url: "audio/velvet-spill.mp3" },
-      /* alternate takes */
-      { title: "Back From The Bar (Take Two)",    artist: "Touché Sessions", url: "audio/back-from-the-bar-take-two.mp3" },
-      { title: "Broken Mirror Floor (Take Two)",  artist: "Touché Sessions", url: "audio/broken-mirror-floor-take-two.mp3" },
-      { title: "Last Call Parade (Take Two)",     artist: "Touché Sessions", url: "audio/last-call-parade-take-two.mp3" },
-      { title: "Pint Glass Parade (Take Two)",    artist: "Touché Sessions", url: "audio/pint-glass-parade-take-two.mp3" },
-      { title: "Velvet Spill (Take Two)",         artist: "Touché Sessions", url: "audio/velvet-spill-take-two.mp3" }
-    ]
-  },
-  {
     name: "Stadium Rock Pop",
     tracks: [
       /* first takes — different tunes before anything repeats */
@@ -214,29 +223,6 @@ const PLAYLISTS = [
       { title: "Dusty Bible (Remix)",                        artist: "Touché Sessions", url: "audio/dusty-bible-remix.mp3" },
       { title: "Midnight Freight (Instrumental)",            artist: "Touché Sessions", url: "audio/midnight-freight-instrumental.mp3" },
       { title: "Midnight Freight (Instrumental Remix)",      artist: "Touché Sessions", url: "audio/midnight-freight-instrumental-remix.mp3" }
-    ]
-  },
-  {
-    name: "Indie Britpop",
-    tracks: [
-      /* first takes — different tunes before anything repeats */
-      { title: "Empty Pavement",                  artist: "Touché Sessions", url: "audio/empty-pavement.mp3" },
-      { title: "Velvet Backseat Crown",           artist: "Touché Sessions", url: "audio/velvet-backseat-crown.mp3" },
-      { title: "Turn The Corner",                 artist: "Touché Sessions", url: "audio/turn-the-corner.mp3" },
-      { title: "Neon Lump Throat",                artist: "Touché Sessions", url: "audio/neon-lump-throat.mp3" },
-      { title: "Saturday On Deansgate",           artist: "Touché Sessions", url: "audio/saturday-on-deansgate.mp3" },
-      { title: "Pint Glass Skies",                artist: "Touché Sessions", url: "audio/pint-glass-skies.mp3" },
-      { title: "Paper Crown",                     artist: "Touché Sessions", url: "audio/paper-crown.mp3" },
-      { title: "Backdoor Sunday",                 artist: "Touché Sessions", url: "audio/backdoor-sunday.mp3" },
-      { title: "Kettle's On",                     artist: "Touché Sessions", url: "audio/kettles-on.mp3" },
-      { title: "Velvet Backseat Frown",           artist: "Touché Sessions", url: "audio/velvet-backseat-frown.mp3" },
-      { title: "Saturday On Deansgate (Smashed)", artist: "Touché Sessions", url: "audio/saturday-on-deansgate-smashed.mp3" },
-      { title: "Pint Glass Skies (Again)",        artist: "Touché Sessions", url: "audio/pint-glass-skies-again.mp3" },
-      /* alternate takes and remixes */
-      { title: "Paper Crown (Take Two)",          artist: "Touché Sessions", url: "audio/paper-crown-take-two.mp3" },
-      { title: "Backdoor Sunday (Take Two)",      artist: "Touché Sessions", url: "audio/backdoor-sunday-take-two.mp3" },
-      { title: "Empty Pavement (Remix)",          artist: "Touché Sessions", url: "audio/empty-pavement-remix.mp3" },
-      { title: "Kettle's On (Remix)",             artist: "Touché Sessions", url: "audio/kettles-on-remix.mp3" }
     ]
   }
 ];

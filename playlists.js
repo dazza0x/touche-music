@@ -126,6 +126,7 @@ const PLAYLISTS = [
       { title: "Glow Up Tonight", artist: "Touché Sessions", url: "https://audio.touchesm.com/glow-up-tonight.mp3" },
       { title: "Midnight Workhorse", artist: "Touché Sessions", url: "https://audio.touchesm.com/midnight-workhorse.mp3" },
       { title: "Tide After the Club", artist: "Touché Sessions", url: "https://audio.touchesm.com/tide-after-the-club.mp3" },
+      { title: "Palm Wine Radar", artist: "Touché Sessions", url: "https://audio.touchesm.com/palm-wine-radar.mp3" },
       /* alternate takes and remixes */
       { title: "Hands Up Tonight (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight-take-two.mp3" },
       { title: "Terraza Dorada (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/terraza-dorada-take-two.mp3" },
@@ -144,7 +145,6 @@ const PLAYLISTS = [
       { title: "Library Card Sunset", artist: "Touché Sessions", url: "https://audio.touchesm.com/library-card-sunset.mp3" },
       { title: "Mirror Shake", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirror-shake.mp3" },
       { title: "Museum Floor", artist: "Touché Sessions", url: "https://audio.touchesm.com/museum-floor.mp3" },
-      { title: "Palm Wine Radar", artist: "Touché Sessions", url: "https://audio.touchesm.com/palm-wine-radar.mp3" },
       { title: "Plastic Lemon Halo", artist: "Touché Sessions", url: "https://audio.touchesm.com/plastic-lemon-halo.mp3" },
       { title: "Plastic Palm Parade", artist: "Touché Sessions", url: "https://audio.touchesm.com/plastic-palm-parade.mp3" },
       { title: "Empty Pavement", artist: "Touché Sessions", url: "https://audio.touchesm.com/empty-pavement.mp3" },

@@ -171,6 +171,12 @@ const PLAYLISTS = [
       { title: "Got a new Van", artist: "Touché Sessions", url: "https://audio.touchesm.com/got-a-new-van.mp3" },
       { title: "Hard Soles Remixed", artist: "Touché Sessions", url: "https://audio.touchesm.com/hard-soles-remixed.mp3" },
       { title: "Hard Soles", artist: "Touché Sessions", url: "https://audio.touchesm.com/hard-soles.mp3" },
+      { title: "Pressure System Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/pressure-system-remix.mp3" },
+      { title: "Pressure System", artist: "Touché Sessions", url: "https://audio.touchesm.com/pressure-system.mp3" },
+      { title: "Saffron Skies Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/saffron-skies-remix.mp3" },
+      { title: "Saffron Skies", artist: "Touché Sessions", url: "https://audio.touchesm.com/saffron-skies.mp3" },
+      { title: "Spreadsheet of My Heart Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/spreadsheet-of-my-heart-remix.mp3" },
+      { title: "Spreadsheet of My Heart", artist: "Touché Sessions", url: "https://audio.touchesm.com/spreadsheet-of-my-heart.mp3" },
       /* alternate takes and remixes */
       { title: "Blindside Glow (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/blindside-glow-take-two.mp3" },
       { title: "Glowstick Weekend (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/glowstick-weekend-take-two.mp3" },

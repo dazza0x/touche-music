@@ -189,5 +189,31 @@ const PLAYLISTS = [
       { title: "Pint Glass Parade (Take Two)",    artist: "Touché Sessions", url: "audio/pint-glass-parade-take-two.mp3" },
       { title: "Velvet Spill (Take Two)",         artist: "Touché Sessions", url: "audio/velvet-spill-take-two.mp3" }
     ]
+  },
+  {
+    name: "Stadium Rock Pop",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+      { title: "Driving Queen",                              artist: "Touché Sessions", url: "audio/driving-queen.mp3" },
+      { title: "Dust on the Bible",                          artist: "Touché Sessions", url: "audio/dust-on-the-bible.mp3" },
+      { title: "Freight Running",                            artist: "Touché Sessions", url: "audio/freight-running.mp3" },
+      { title: "Gasoline Queen",                             artist: "Touché Sessions", url: "audio/gasoline-queen.mp3" },
+      { title: "I Ain't Ringing No More",                    artist: "Touché Sessions", url: "audio/i-aint-ringing-no-more.mp3" },
+      { title: "Just One More (NYC)",                        artist: "Touché Sessions", url: "audio/just-one-more-nyc.mp3" },
+      { title: "No One's Home",                              artist: "Touché Sessions", url: "audio/no-ones-home.mp3" },
+      { title: "One More Round",                             artist: "Touché Sessions", url: "audio/one-more-round.mp3" },
+      { title: "One More Shot (Vegas)",                      artist: "Touché Sessions", url: "audio/one-more-shot-vegas.mp3" },
+      { title: "Telephone's Ringing (I Ain't Home)",         artist: "Touché Sessions", url: "audio/telephones-ringing-i-aint-home.mp3" },
+      { title: "Dusty Old Bible",                            artist: "Touché Sessions", url: "audio/dusty-old-bible.mp3" },
+      { title: "Freight Running Hard",                       artist: "Touché Sessions", url: "audio/freight-running-hard.mp3" },
+      { title: "Idle Bible",                                 artist: "Touché Sessions", url: "audio/idle-bible.mp3" },
+      /* alternate takes, remixes and instrumentals */
+      { title: "Gasoline Queen (Take Two)",                  artist: "Touché Sessions", url: "audio/gasoline-queen-take-two.mp3" },
+      { title: "Telephone's Ringing (I Ain't Home) (Take Two)", artist: "Touché Sessions", url: "audio/telephones-ringing-i-aint-home-take-two.mp3" },
+      { title: "Driving Queen (Remix)",                      artist: "Touché Sessions", url: "audio/driving-queen-remix.mp3" },
+      { title: "Dusty Bible (Remix)",                        artist: "Touché Sessions", url: "audio/dusty-bible-remix.mp3" },
+      { title: "Midnight Freight (Instrumental)",            artist: "Touché Sessions", url: "audio/midnight-freight-instrumental.mp3" },
+      { title: "Midnight Freight (Instrumental Remix)",      artist: "Touché Sessions", url: "audio/midnight-freight-instrumental-remix.mp3" }
+    ]
   }
 ];

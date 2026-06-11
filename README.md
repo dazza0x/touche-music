@@ -14,7 +14,6 @@ Live at: **https://music.touchesm.com** (once set up — see below)
 | `styles.css` | The look (Touché brand colours and fonts) |
 | `player.js` | The player logic — you shouldn't need to touch this |
 | `playlists.js` | **The music list — this is the only file you edit** |
-| `audio/` | The MP3 files |
 | `manifest.json`, `sw.js`, `icons/` | "Add to Home Screen" app bits |
 | `CNAME` | Tells GitHub Pages to use music.touchesm.com |
 
@@ -47,40 +46,25 @@ That's it — the player is live at https://music.touchesm.com.
 
 ## Part 2 — Adding or changing music
 
-Songs currently live in the repository's `audio/` folder, which is the
-simplest place to start. (GitHub's upload limit is 25 MB per file — a normal
-song is well under that.)
+The MP3s live in **Cloudflare R2** (bucket `touche-music`, served at
+`audio.touchesm.com` — free storage and free bandwidth at this scale).
 
 1. Export the song from Suno as MP3.
 2. Rename it to lowercase-with-hyphens, no spaces — e.g.
    `golden-hour-gloss.mp3`.
-3. On GitHub, open the `audio` folder → **Add file → Upload files** → drag
-   the MP3 in → Commit changes.
-4. Open `playlists.js` → click the pencil (Edit) → copy an existing track
-   line and change the title and url:
+3. In the Cloudflare dashboard: **R2 → touche-music → Upload** → drop the
+   MP3 in.
+4. On GitHub, open `playlists.js` → click the pencil (Edit) → copy an
+   existing track line and change the title and url:
    ```js
-   { title: "Golden Hour Gloss", artist: "Touché Sessions", url: "audio/golden-hour-gloss.mp3" },
+   { title: "Golden Hour Gloss", artist: "Touché Sessions", url: "https://audio.touchesm.com/golden-hour-gloss.mp3" },
    ```
-5. Commit. The site updates itself within a couple of minutes.
+5. Commit. The site updates itself within a couple of minutes, and the
+   salon PCs download the new song on their next morning sync.
 
 To add a whole playlist, copy an entire `{ name: ..., tracks: [...] }` block
 in `playlists.js` and give it a new name. Playlists appear as chips across
 the top of the app in the order listed.
-
-### Later: moving the audio to Cloudflare R2
-
-Once the library grows (GitHub repositories are happiest under ~1 GB), move
-the MP3s to Cloudflare R2 — free egress, so no bandwidth bills:
-
-1. Cloudflare dashboard → **R2** → Create bucket, call it `touche-music`.
-2. In the bucket's **Settings → Public access**, connect a custom domain
-   (e.g. `audio.touchesm.com`) — or enable the `r2.dev` development URL.
-3. Upload MP3s through the dashboard (same naming rules as above).
-4. In `playlists.js`, use the full public URL as the track's `url`:
-   ```js
-   { title: "Golden Hour Gloss", artist: "Touché Sessions", url: "https://audio.touchesm.com/golden-hour-gloss.mp3" },
-   ```
-Repo-hosted and R2-hosted tracks can be mixed freely while migrating.
 
 ## Part 3 — Setting up the salon iPad
 

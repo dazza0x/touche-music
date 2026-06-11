@@ -34,20 +34,32 @@ try {
       $current = [pscustomobject]@{ Name = $Matches[1]; Tracks = [System.Collections.ArrayList]@() }
       $playlists += $current
     }
-    elseif ($line -match 'title:\s*"([^"]+)".*artist:\s*"([^"]+)".*url:\s*"audio/([^"]+)"') {
-      if ($current) { [void]$current.Tracks.Add([pscustomobject]@{ Title = $Matches[1]; Artist = $Matches[2]; File = $Matches[3] }) }
+    elseif ($line -match 'title:\s*"([^"]+)".*artist:\s*"([^"]+)".*url:\s*"([^"]+)"') {
+      if ($current) {
+        # urls may be repo-relative (audio/x.mp3) or absolute (the
+        # Cloudflare R2 domain) — keep the same local filename either way
+        $u = $Matches[3]
+        [void]$current.Tracks.Add([pscustomobject]@{
+          Title  = $Matches[1]
+          Artist = $Matches[2]
+          File   = ($u -split '/')[-1]
+          Url    = $(if ($u -match '^https?://') { $u } else { "$site/$u" })
+        })
+      }
     }
   }
   $total = ($playlists | ForEach-Object { $_.Tracks.Count } | Measure-Object -Sum).Sum
   if (-not $playlists -or $total -eq 0) { throw 'playlists.js parsed to nothing - aborting before touching local files' }
 
   # download any tracks we do not have yet
-  $wanted = $playlists | ForEach-Object { $_.Tracks } | ForEach-Object { $_.File } | Sort-Object -Unique
+  $allTracks = $playlists | ForEach-Object { $_.Tracks }
+  $wanted = $allTracks | ForEach-Object { $_.File } | Sort-Object -Unique
   $added = 0
   foreach ($f in $wanted) {
     $to = "$root\audio\$f"
     if (-not (Test-Path $to)) {
-      Invoke-WebRequest "$site/audio/$f" -OutFile $to -UseBasicParsing
+      $u = ($allTracks | Where-Object { $_.File -eq $f } | Select-Object -First 1).Url
+      Invoke-WebRequest $u -OutFile $to -UseBasicParsing
       $added++
     }
   }

@@ -21,9 +21,10 @@ the radio and avoid the ~£600/yr PPL PRS TheMusicLicence fee.
 - Playlist data lives in **playlists.js** (a plain JS file rather than
   fetched JSON — fetch() of local files has caused issues on Pages before).
   Shape: `PLAYLISTS = [{ name, tracks: [{ title, artist, url }] }]`.
-- Audio: MP3 (320kbps). Currently in the repo's `audio/` folder for
-  simplicity; planned move to **Cloudflare R2** (free egress) as the library
-  grows. Track urls may be relative (repo) or absolute (R2) — both work.
+- Audio: MP3, hosted in **Cloudflare R2** (bucket `touche-music`, account
+  822821b3bbd95ab6b53f8935ab4a2018) served at **audio.touchesm.com** — free
+  egress. playlists.js uses absolute urls; the player and salon sync both
+  also still accept repo-relative urls if ever needed.
 - **Media Session API** wired for lock screen / Control Centre controls.
 - PWA: manifest.json + sw.js (app-shell cache only — the service worker
   deliberately does NOT intercept .mp3 requests, so Safari's range-request
@@ -54,11 +55,11 @@ front-desk PC, controlled via the Sonos app. See `salon/README.md`.
 - `salon/setup.ps1` — one-time admin install on a salon PC
   (`irm https://music.touchesm.com/salon/setup.ps1 | iex`).
 - `salon/sync.ps1` — scheduled daily; parses playlists.js **one track
-  per line** (keep that format), downloads new MP3s from the live
-  site, rewrites per-genre .m3u files, triggers a Sonos re-index.
-  The salon task re-downloads this script from the site each run, so
-  pushing fixes to the repo updates the salons remotely.
-- `scripts/build-sonos-share.js` — local/manual share builder (node).
+  per line** (keep that format), downloads new MP3s from the url in
+  each track line (R2 or site-relative), rewrites per-genre .m3u
+  files, triggers a Sonos re-index. The salon task re-downloads this
+  script from the site each run, so pushing fixes to the repo updates
+  the salons remotely.
 - `salon/help.html` — printable staff cheat sheet.
 
 ## Cache busting
@@ -73,6 +74,8 @@ Serve over HTTP (e.g. `python -m http.server`) rather than opening
 index.html directly — the audio and service worker behave properly that way.
 
 ## Remaining nice-to-haves (discussed, not yet built)
+- Admin "move songs between genres" screen — static page committing
+  playlists.js via the GitHub Contents API with an owner-held
+  fine-grained PAT (next planned piece of work).
 - "Quiet mode" preset for late afternoon.
 - Per-salon playlist sets (Caterham / Purley).
-- Cloudflare R2 migration once the library outgrows the repo.

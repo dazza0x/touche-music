@@ -20,9 +20,9 @@
    ===================================================================== */
 const PLAYLISTS = [
   {
-    name: "Easy Listening",
+    name: "The Radio",
     tracks: [
-      /* first takes — five different tunes before anything repeats */
+      /* first takes — different tunes before anything repeats */
       { title: "Sunlit Table for Two",            artist: "Touché Sessions", url: "audio/sunlit-table-for-two.mp3" },
       { title: "Paper Cup Sun",                   artist: "Touché Sessions", url: "audio/paper-cup-sun.mp3" },
       { title: "Paper Lanterns",                  artist: "Touché Sessions", url: "audio/paper-lanterns.mp3" },
@@ -42,6 +42,28 @@ const PLAYLISTS = [
       { title: "Coffee In Hand",                  artist: "Touché Sessions", url: "audio/coffee-in-hand.mp3" },
       { title: "Lemon on My Tongue",              artist: "Touché Sessions", url: "audio/lemon-on-my-tongue.mp3" },
       { title: "Sunrise On Air",                  artist: "Touché Sessions", url: "audio/sunrise-on-air.mp3" },
+      { title: "Velvet After Midnight",           artist: "Touché Sessions", url: "audio/velvet-after-midnight.mp3" },
+      { title: "Velvet Signal",                   artist: "Touché Sessions", url: "audio/velvet-signal.mp3" },
+      { title: "Boots On the Hill",               artist: "Touché Sessions", url: "audio/boots-on-the-hill.mp3" },
+      { title: "Cardigan Embers",                 artist: "Touché Sessions", url: "audio/cardigan-embers.mp3" },
+      { title: "Glass Confetti",                  artist: "Touché Sessions", url: "audio/glass-confetti.mp3" },
+      { title: "Mirrorball Trouble",              artist: "Touché Sessions", url: "audio/mirrorball-trouble.mp3" },
+      { title: "Tailgate Ghost",                  artist: "Touché Sessions", url: "audio/tailgate-ghost.mp3" },
+      { title: "Tape on My Thumb",                artist: "Touché Sessions", url: "audio/tape-on-my-thumb.mp3" },
+      { title: "Paper Planes Flying",             artist: "Touché Sessions", url: "audio/paper-planes-flying.mp3" },
+      { title: "Paper Planes at Midnight",        artist: "Touché Sessions", url: "audio/paper-planes-at-midnight.mp3" },
+      { title: "Neon Halo",                       artist: "Touché Sessions", url: "audio/neon-halo.mp3" },
+      { title: "River Runs",                      artist: "Touché Sessions", url: "audio/river-runs.mp3" },
+      { title: "Economy of the Night",            artist: "Touché Sessions", url: "audio/economy-of-the-night.mp3" },
+      { title: "Night Economy",                   artist: "Touché Sessions", url: "audio/night-economy.mp3" },
+      { title: "Midnight Economy",                artist: "Touché Sessions", url: "audio/midnight-economy.mp3" },
+      { title: "Back Home Somewhere",             artist: "Touché Sessions", url: "audio/back-home-somewhere.mp3" },
+      { title: "Somewhere Back Home",             artist: "Touché Sessions", url: "audio/somewhere-back-home.mp3" },
+      { title: "Gold Rush Heart",                 artist: "Touché Sessions", url: "audio/gold-rush-heart.mp3" },
+      { title: "Best Served Cold",                artist: "Touché Sessions", url: "audio/best-served-cold.mp3" },
+      { title: "Polaroid Summer",                 artist: "Touché Sessions", url: "audio/polaroid-summer.mp3" },
+      { title: "Delete Your Number",              artist: "Touché Sessions", url: "audio/delete-your-number.mp3" },
+      { title: "Last Train Out",                  artist: "Touché Sessions", url: "audio/last-train-out.mp3" },
       /* alternate takes */
       { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "audio/sunlit-table-for-two-take-two.mp3" },
       { title: "Paper Cup Sun (Take Two)",        artist: "Touché Sessions", url: "audio/paper-cup-sun-take-two.mp3" },
@@ -61,20 +83,23 @@ const PLAYLISTS = [
       { title: "Easy Swaying (Take Two)",         artist: "Touché Sessions", url: "audio/easy-swaying-take-two.mp3" },
       { title: "Coffee In Hand (Take Two)",       artist: "Touché Sessions", url: "audio/coffee-in-hand-take-two.mp3" },
       { title: "Lemon on My Tongue (Take Two)",   artist: "Touché Sessions", url: "audio/lemon-on-my-tongue-take-two.mp3" },
-      { title: "Sunrise On Air (Take Two)",       artist: "Touché Sessions", url: "audio/sunrise-on-air-take-two.mp3" }
-    ]
-  },
-  {
-    name: "R&B",
-    tracks: [
-      /* first takes — different tunes before anything repeats */
-      { title: "Velvet After Midnight",              artist: "Touché Sessions", url: "audio/velvet-after-midnight.mp3" },
-      { title: "Velvet Signal",                      artist: "Touché Sessions", url: "audio/velvet-signal.mp3" },
-      /* alternate takes */
+      { title: "Sunrise On Air (Take Two)",       artist: "Touché Sessions", url: "audio/sunrise-on-air-take-two.mp3" },
       { title: "Velvet After Midnight (Take Two)",   artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-two.mp3" },
-      { title: "Velvet Signal (Take Two)",           artist: "Touché Sessions", url: "audio/velvet-signal-take-two.mp3" },
+      { title: "Velvet Signal (Take Two)",        artist: "Touché Sessions", url: "audio/velvet-signal-take-two.mp3" },
       { title: "Velvet After Midnight (Take Three)", artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-three.mp3" },
-      { title: "Velvet After Midnight (Take Four)",  artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-four.mp3" }
+      { title: "Velvet After Midnight (Take Four)",  artist: "Touché Sessions", url: "audio/velvet-after-midnight-take-four.mp3" },
+      { title: "Boots On the Hill (Take Two)",    artist: "Touché Sessions", url: "audio/boots-on-the-hill-take-two.mp3" },
+      { title: "Cardigan Embers (Take Two)",      artist: "Touché Sessions", url: "audio/cardigan-embers-take-two.mp3" },
+      { title: "Glass Confetti (Take Two)",       artist: "Touché Sessions", url: "audio/glass-confetti-take-two.mp3" },
+      { title: "Mirrorball Trouble (Take Two)",   artist: "Touché Sessions", url: "audio/mirrorball-trouble-take-two.mp3" },
+      { title: "Tailgate Ghost (Take Two)",       artist: "Touché Sessions", url: "audio/tailgate-ghost-take-two.mp3" },
+      { title: "Tape on My Thumb (Take Two)",     artist: "Touché Sessions", url: "audio/tape-on-my-thumb-take-two.mp3" },
+      { title: "Neon Halo (Take Two)",            artist: "Touché Sessions", url: "audio/neon-halo-take-two.mp3" },
+      { title: "River Runs (Take Two)",           artist: "Touché Sessions", url: "audio/river-runs-take-two.mp3" },
+      { title: "River Runs (Take Three)",         artist: "Touché Sessions", url: "audio/river-runs-take-three.mp3" },
+      { title: "Best Served Cold (Remix)",        artist: "Touché Sessions", url: "audio/best-served-cold-remix.mp3" },
+      { title: "Delete Your Number (Remix)",      artist: "Touché Sessions", url: "audio/delete-your-number-remix.mp3" },
+      { title: "Last Train Out (Remix)",          artist: "Touché Sessions", url: "audio/last-train-out-remix.mp3" }
     ]
   },
   {
@@ -158,45 +183,6 @@ const PLAYLISTS = [
       { title: "Last Call Parade (Take Two)",     artist: "Touché Sessions", url: "audio/last-call-parade-take-two.mp3" },
       { title: "Pint Glass Parade (Take Two)",    artist: "Touché Sessions", url: "audio/pint-glass-parade-take-two.mp3" },
       { title: "Velvet Spill (Take Two)",         artist: "Touché Sessions", url: "audio/velvet-spill-take-two.mp3" }
-    ]
-  },
-  {
-    name: "The Radio",
-    tracks: [
-      /* first takes — different tunes before anything repeats */
-      { title: "Boots On the Hill",               artist: "Touché Sessions", url: "audio/boots-on-the-hill.mp3" },
-      { title: "Cardigan Embers",                 artist: "Touché Sessions", url: "audio/cardigan-embers.mp3" },
-      { title: "Glass Confetti",                  artist: "Touché Sessions", url: "audio/glass-confetti.mp3" },
-      { title: "Mirrorball Trouble",              artist: "Touché Sessions", url: "audio/mirrorball-trouble.mp3" },
-      { title: "Tailgate Ghost",                  artist: "Touché Sessions", url: "audio/tailgate-ghost.mp3" },
-      { title: "Tape on My Thumb",                artist: "Touché Sessions", url: "audio/tape-on-my-thumb.mp3" },
-      { title: "Paper Planes Flying",             artist: "Touché Sessions", url: "audio/paper-planes-flying.mp3" },
-      { title: "Paper Planes at Midnight",        artist: "Touché Sessions", url: "audio/paper-planes-at-midnight.mp3" },
-      { title: "Neon Halo",                       artist: "Touché Sessions", url: "audio/neon-halo.mp3" },
-      { title: "River Runs",                      artist: "Touché Sessions", url: "audio/river-runs.mp3" },
-      { title: "Economy of the Night",            artist: "Touché Sessions", url: "audio/economy-of-the-night.mp3" },
-      { title: "Night Economy",                   artist: "Touché Sessions", url: "audio/night-economy.mp3" },
-      { title: "Midnight Economy",                artist: "Touché Sessions", url: "audio/midnight-economy.mp3" },
-      { title: "Back Home Somewhere",             artist: "Touché Sessions", url: "audio/back-home-somewhere.mp3" },
-      { title: "Somewhere Back Home",             artist: "Touché Sessions", url: "audio/somewhere-back-home.mp3" },
-      { title: "Gold Rush Heart",                 artist: "Touché Sessions", url: "audio/gold-rush-heart.mp3" },
-      { title: "Best Served Cold",                artist: "Touché Sessions", url: "audio/best-served-cold.mp3" },
-      { title: "Polaroid Summer",                 artist: "Touché Sessions", url: "audio/polaroid-summer.mp3" },
-      { title: "Delete Your Number",              artist: "Touché Sessions", url: "audio/delete-your-number.mp3" },
-      { title: "Last Train Out",                  artist: "Touché Sessions", url: "audio/last-train-out.mp3" },
-      /* alternate takes */
-      { title: "Boots On the Hill (Take Two)",    artist: "Touché Sessions", url: "audio/boots-on-the-hill-take-two.mp3" },
-      { title: "Cardigan Embers (Take Two)",      artist: "Touché Sessions", url: "audio/cardigan-embers-take-two.mp3" },
-      { title: "Glass Confetti (Take Two)",       artist: "Touché Sessions", url: "audio/glass-confetti-take-two.mp3" },
-      { title: "Mirrorball Trouble (Take Two)",   artist: "Touché Sessions", url: "audio/mirrorball-trouble-take-two.mp3" },
-      { title: "Tailgate Ghost (Take Two)",       artist: "Touché Sessions", url: "audio/tailgate-ghost-take-two.mp3" },
-      { title: "Tape on My Thumb (Take Two)",     artist: "Touché Sessions", url: "audio/tape-on-my-thumb-take-two.mp3" },
-      { title: "Neon Halo (Take Two)",            artist: "Touché Sessions", url: "audio/neon-halo-take-two.mp3" },
-      { title: "River Runs (Take Two)",           artist: "Touché Sessions", url: "audio/river-runs-take-two.mp3" },
-      { title: "River Runs (Take Three)",         artist: "Touché Sessions", url: "audio/river-runs-take-three.mp3" },
-      { title: "Best Served Cold (Remix)",        artist: "Touché Sessions", url: "audio/best-served-cold-remix.mp3" },
-      { title: "Delete Your Number (Remix)",      artist: "Touché Sessions", url: "audio/delete-your-number-remix.mp3" },
-      { title: "Last Train Out (Remix)",          artist: "Touché Sessions", url: "audio/last-train-out-remix.mp3" }
     ]
   },
   {

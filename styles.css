@@ -57,6 +57,11 @@ nav.playlists{
   flex-shrink:0;
 }
 nav.playlists::-webkit-scrollbar{display:none}
+/* centre the chips when they fit the row, but stay scrollable from the
+   first chip when they overflow (auto margins collapse on overflow —
+   justify-content:center would clip the left edge instead) */
+.chip:first-child{margin-left:auto}
+.chip:last-child{margin-right:auto}
 .chip{
   flex:0 0 auto;
   border:1px solid var(--line);

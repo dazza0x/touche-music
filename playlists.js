@@ -221,6 +221,10 @@ const PLAYLISTS = [
     name: "D&B",
     tracks: [
       /* first takes — different tunes before anything repeats */
+      { title: "Sky High at 174 (Dance)", artist: "Touché Sessions", url: "https://audio.touchesm.com/sky-high-at-174-dance.mp3" },
+      { title: "Sky High at 174", artist: "Touché Sessions", url: "https://audio.touchesm.com/sky-high-at-174.mp3" },
+      { title: "Skyline at 174 (Full version)", artist: "Touché Sessions", url: "https://audio.touchesm.com/skyline-at-174-full-version.mp3" },
+      { title: "Skyline at 174", artist: "Touché Sessions", url: "https://audio.touchesm.com/skyline-at-174.mp3" }
     ]
   }
 ];

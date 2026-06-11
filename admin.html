@@ -331,7 +331,12 @@ function planUpload(filename){
 /* ===================== views ===================== */
 function render(html){ $id('view').innerHTML = html; }
 function modal(html){ $id('modalHost').innerHTML = `<div class="modal-back" onclick="if(event.target===this)closeModal()"><div class="modal">${html}</div></div>`; }
-function closeModal(){ $id('modalHost').innerHTML = ''; }
+function closeModal(){
+  $id('modalHost').innerHTML = '';
+  /* anything staged inside a modal (uploads especially) must show up
+     the moment it closes — re-draw the console and its save bar */
+  if (creds && model) viewConsole();
+}
 
 function viewSetup(){
   render(`
@@ -391,6 +396,10 @@ async function openConsole(){
   catch (e){ render(`<div class="panel"><p>Could not load the library: ${esc(e.message)}</p><div class="btn-row"><button class="btn" onclick="openConsole()">Retry</button></div></div>`); }
 }
 
+const openSections = new Set();
+function syncOpen(el){
+  if (el.open) openSections.add(el.dataset.pl); else openSections.delete(el.dataset.pl);
+}
 function viewConsole(){
   let h = '';
   model.forEach((pl, pi) => {
@@ -403,7 +412,8 @@ function viewConsole(){
         <button onclick="askRename(${pi},${ti})">Rename</button>
         <button onclick="askRemove(${pi},${ti})" title="Remove from playlist">✕</button></div>`;
     });
-    h += `<details class="pl"${model.length <= 5 && pi === 0 ? ' open' : ''}>
+    const open = openSections.size === 0 ? pi === 0 : openSections.has(pl.name);
+    h += `<details class="pl" data-pl="${esc(pl.name)}" ontoggle="syncOpen(this)"${open ? ' open' : ''}>
       <summary><span class="pl-name">${esc(pl.name)}</span>
         <span class="pl-count">${pl.tracks.length} tracks</span>
         <button class="btn small ghost" onclick="event.preventDefault();askUpload(${pi})">Add songs</button>
@@ -518,6 +528,8 @@ async function doUpload(pi){
       if (isAlternate(t.title)) dst.tracks.push(t);
       else dst.tracks.splice(dst.altBoundary++, 0, t);
       dirty++; ok++;
+      const dc = $id('dirtyCount');
+      if (dc){ dc.textContent = dirty + ' pending change' + (dirty === 1 ? '' : 's'); $id('saveBtn').disabled = false; }
     } catch (e){
       st.textContent = 'failed: ' + e.message;
     }

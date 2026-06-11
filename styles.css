@@ -10,6 +10,41 @@
   --sage-deep:#3f6253;
   --line:#ddd2c0;
   --gold:#b08d4f;
+  --on-sage:#fdfbf7;
+  --bar-bg:rgba(246,241,232,.92);
+  --shadow-sage:rgba(87,127,108,.35);
+  color-scheme:light;
+}
+
+/* Touché after dark — same brand, lights down. Warm near-black ink,
+   parchment text, sage lifted a touch so it still carries the accent. */
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --parchment:#1e1a15;
+    --card:#28231c;
+    --ink:#ece4d4;
+    --ink-soft:#a59a87;
+    --sage:#6e9c86;
+    --sage-deep:#9cc0ae;
+    --line:#3b342a;
+    --gold:#c9a36b;
+    --bar-bg:rgba(30,26,21,.92);
+    --shadow-sage:rgba(0,0,0,.45);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --parchment:#1e1a15;
+  --card:#28231c;
+  --ink:#ece4d4;
+  --ink-soft:#a59a87;
+  --sage:#6e9c86;
+  --sage-deep:#9cc0ae;
+  --line:#3b342a;
+  --gold:#c9a36b;
+  --bar-bg:rgba(30,26,21,.92);
+  --shadow-sage:rgba(0,0,0,.45);
+  color-scheme:dark;
 }
 *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{height:100%}
@@ -21,6 +56,7 @@ body{
   flex-direction:column;
   min-height:100dvh;
   letter-spacing:.01em;
+  transition:background-color .3s ease, color .3s ease;
 }
 
 /* ---------- header ---------- */
@@ -28,7 +64,25 @@ header{
   text-align:center;
   padding:clamp(20px,4vh,44px) 24px 8px;
   flex-shrink:0;
+  position:relative;
 }
+.theme{
+  position:absolute;
+  top:clamp(16px,3.5vh,40px);
+  right:clamp(16px,5vw,56px);
+  width:44px;height:44px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  border:1px solid var(--line);
+  border-radius:50%;
+  color:var(--ink-soft);
+  cursor:pointer;
+  transition:color .2s, border-color .2s;
+}
+.theme:focus-visible{outline:2px solid var(--sage);outline-offset:2px}
+.theme svg{width:20px;height:20px;fill:currentColor}
 header .wordmark{
   font-family:'Cormorant Garamond',serif;
   font-size:clamp(30px,4.4vw,44px);
@@ -80,7 +134,7 @@ nav.playlists::-webkit-scrollbar{display:none}
 .chip.active{
   background:var(--sage);
   border-color:var(--sage);
-  color:#fdfbf7;
+  color:var(--on-sage);
 }
 
 /* ---------- now playing ---------- */
@@ -188,7 +242,7 @@ main{
 .bar{
   position:fixed;
   left:0;right:0;bottom:0;
-  background:rgba(246,241,232,.92);
+  background:var(--bar-bg);
   backdrop-filter:blur(14px);
   -webkit-backdrop-filter:blur(14px);
   border-top:1px solid var(--line);
@@ -271,9 +325,9 @@ main{
 .ctl svg{width:26px;height:26px;fill:currentColor}
 .ctl.play{
   background:var(--sage);
-  color:#fdfbf7;
+  color:var(--on-sage);
   width:76px;height:76px;
-  box-shadow:0 6px 18px rgba(87,127,108,.35);
+  box-shadow:0 6px 18px var(--shadow-sage);
 }
 .ctl.play svg{width:32px;height:32px}
 .ctl.toggle{color:var(--ink-soft)}

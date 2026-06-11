@@ -47,6 +47,11 @@ the radio and avoid the ~£600/yr PPL PRS TheMusicLicence fee.
   sage `#577f6c` (primary accent), sage-deep `#3f6253`, line `#ddd2c0`,
   gold `#b08d4f` (sparing).
 - Aesthetic: warm, editorial, restrained. No heavy shadows or loud gradients.
+- Dark mode: warm near-black `#1e1a15`, card `#28231c`, text `#ece4d4`,
+  sage lifted to `#6e9c86`/`#9cc0ae`, line `#3b342a`, gold `#c9a36b`.
+  Three-way toggle in the header (follow device / light / dark), stored
+  in localStorage as `touche-theme`; CSS vars switch via
+  prefers-color-scheme plus a `data-theme` override on <html>.
 
 ## Sonos (salon speakers)
 The salon Sonos units (Play:1s — no AirPlay, no Bluetooth, no line-in)

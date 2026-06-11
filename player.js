@@ -210,6 +210,40 @@ if ('mediaSession' in navigator){
   } catch(e){ /* seekto not supported everywhere — fine without it */ }
 }
 
+/* ===================== theme — light / dark / follow the device ===================== */
+const themeOrder = ['system', 'light', 'dark'];
+const themeLabels = {
+  system: 'Theme: follows the device',
+  light:  'Theme: light',
+  dark:   'Theme: dark'
+};
+const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+function applyTheme(mode){
+  if (mode === 'system') delete document.documentElement.dataset.theme;
+  else document.documentElement.dataset.theme = mode;
+  $('iconThemeAuto').style.display  = mode === 'system' ? 'block' : 'none';
+  $('iconThemeLight').style.display = mode === 'light'  ? 'block' : 'none';
+  $('iconThemeDark').style.display  = mode === 'dark'   ? 'block' : 'none';
+  $('themeBtn').setAttribute('aria-label', themeLabels[mode]);
+  /* keep the browser chrome colour in step (iOS status bar etc.) */
+  const dark = mode === 'dark' || (mode === 'system' && darkQuery.matches);
+  document.querySelector('meta[name="theme-color"]').content = dark ? '#1e1a15' : '#f6f1e8';
+}
+
+let theme = localStorage.getItem('touche-theme');
+if (themeOrder.indexOf(theme) === -1) theme = 'system';
+applyTheme(theme);
+
+$('themeBtn').onclick = ()=>{
+  theme = themeOrder[(themeOrder.indexOf(theme) + 1) % themeOrder.length];
+  localStorage.setItem('touche-theme', theme);
+  applyTheme(theme);
+};
+/* follow live OS switches while in system mode */
+if (darkQuery.addEventListener) darkQuery.addEventListener('change', ()=> applyTheme(theme));
+else if (darkQuery.addListener) darkQuery.addListener(()=> applyTheme(theme));
+
 /* ===================== service worker (PWA) ===================== */
 if ('serviceWorker' in navigator && location.protocol === 'https:'){
   window.addEventListener('load', ()=> navigator.serviceWorker.register('sw.js'));

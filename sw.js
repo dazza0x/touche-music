@@ -4,7 +4,7 @@
    with range requests, and letting those pass straight through keeps
    seeking and long-play reliable. */
 
-const CACHE = 'touche-music-v2';
+const CACHE = 'touche-music-v3';
 const SHELL = [
   './',
   'index.html',

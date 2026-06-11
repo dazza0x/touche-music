@@ -111,6 +111,7 @@ const PLAYLISTS = [
       { title: "Hands Up Tonight", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight.mp3" },
       { title: "Comment Section Heart", artist: "Touché Sessions", url: "https://audio.touchesm.com/comment-section-heart.mp3" },
       { title: "Blindside Glow", artist: "Touché Sessions", url: "https://audio.touchesm.com/blindside-glow.mp3" },
+      { title: "Back From The Bar", artist: "Touché Sessions", url: "https://audio.touchesm.com/back-from-the-bar.mp3" },
       /* alternate takes and remixes */
       { title: "Hands Up Tonight (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight-take-two.mp3" },
       { title: "Comment Section Heart (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/comment-section-heart-take-two.mp3" }
@@ -159,7 +160,6 @@ const PLAYLISTS = [
       { title: "Velvet Backseat Frown", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-backseat-frown.mp3" },
       { title: "Saturday On Deansgate (Smashed)", artist: "Touché Sessions", url: "https://audio.touchesm.com/saturday-on-deansgate-smashed.mp3" },
       { title: "Pint Glass Skies (Again)", artist: "Touché Sessions", url: "https://audio.touchesm.com/pint-glass-skies-again.mp3" },
-      { title: "Back From The Bar", artist: "Touché Sessions", url: "https://audio.touchesm.com/back-from-the-bar.mp3" },
       { title: "Broken Mirror Floor", artist: "Touché Sessions", url: "https://audio.touchesm.com/broken-mirror-floor.mp3" },
       { title: "Last Call Parade", artist: "Touché Sessions", url: "https://audio.touchesm.com/last-call-parade.mp3" },
       { title: "Pint Glass Parade", artist: "Touché Sessions", url: "https://audio.touchesm.com/pint-glass-parade.mp3" },

@@ -67,6 +67,15 @@ function renderTracks(){
 function renderNow(){
   const t = PLAYLISTS[plIndex].tracks[trIndex];
   $('npPlaylist').textContent = PLAYLISTS[plIndex].name;
+  /* a playlist can be empty while songs are still being added */
+  if (!t){
+    $('npTitle').textContent = 'Nothing here yet';
+    $('npArtist').textContent = 'Songs added to this playlist will appear shortly';
+    document.body.classList.remove('playing');
+    $('iconPlay').style.display = 'block';
+    $('iconPause').style.display = 'none';
+    return;
+  }
   $('npTitle').textContent = started ? t.title : 'Choose a playlist';
   $('npArtist').textContent = started ? t.artist : 'Tap play and the music looks after itself';
   document.body.classList.toggle('playing', started && !audio.paused);
@@ -102,6 +111,15 @@ function selectPlaylist(i){
 }
 
 function playTrack(i){
+  if (!PLAYLISTS[plIndex].tracks[i]){
+    /* empty playlist — show its (empty) state rather than erroring */
+    trIndex = 0;
+    started = false;
+    audio.pause();
+    renderTracks();
+    renderNow();
+    return;
+  }
   trIndex = i;
   started = true;
   audio.src = PLAYLISTS[plIndex].tracks[i].url;

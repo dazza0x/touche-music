@@ -216,5 +216,11 @@ const PLAYLISTS = [
       { title: "Midnight Freight (Instrumental)", artist: "Touché Sessions", url: "https://audio.touchesm.com/midnight-freight-instrumental.mp3" },
       { title: "Midnight Freight (Instrumental Remix)", artist: "Touché Sessions", url: "https://audio.touchesm.com/midnight-freight-instrumental-remix.mp3" }
     ]
+  },
+  {
+    name: "D&B",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+    ]
   }
 ];

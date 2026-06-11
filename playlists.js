@@ -166,6 +166,7 @@ const PLAYLISTS = [
       { title: "Velvet Spill", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-spill.mp3" },
       { title: "Don’t Wait Up Again", artist: "Touché Sessions", url: "https://audio.touchesm.com/dont-wait-up-again.mp3" },
       { title: "Don’t Wait Up", artist: "Touché Sessions", url: "https://audio.touchesm.com/dont-wait-up.mp3" },
+      { title: "Good Vinyl Riot", artist: "Touché Sessions", url: "https://audio.touchesm.com/good-vinyl-riot.mp3" },
       /* alternate takes and remixes */
       { title: "Blindside Glow (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/blindside-glow-take-two.mp3" },
       { title: "Glowstick Weekend (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/glowstick-weekend-take-two.mp3" },
@@ -184,7 +185,8 @@ const PLAYLISTS = [
       { title: "Broken Mirror Floor (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/broken-mirror-floor-take-two.mp3" },
       { title: "Last Call Parade (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/last-call-parade-take-two.mp3" },
       { title: "Pint Glass Parade (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/pint-glass-parade-take-two.mp3" },
-      { title: "Velvet Spill (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-spill-take-two.mp3" }
+      { title: "Velvet Spill (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-spill-take-two.mp3" },
+      { title: "Good Vinyl Riot (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/good-vinyl-riot-take-two.mp3" }
     ]
   },
   {

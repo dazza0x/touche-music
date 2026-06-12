@@ -119,9 +119,25 @@ const PLAYLISTS = [
       { title: "Mango After Dark", artist: "Touché Sessions", url: "https://audio.touchesm.com/mango-after-dark.mp3" },
       { title: "Palm in Mine Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/palm-in-mine-remix.mp3" },
       { title: "Palm in Mine", artist: "Touché Sessions", url: "https://audio.touchesm.com/palm-in-mine.mp3" },
+      { title: "Backseat Sunshine Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/backseat-sunshine-remix.mp3" },
+      { title: "Backseat Sunshine", artist: "Touché Sessions", url: "https://audio.touchesm.com/backseat-sunshine.mp3" },
+      { title: "Blue Skies Again Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/blue-skies-again-remix.mp3" },
+      { title: "Blue Skies Again", artist: "Touché Sessions", url: "https://audio.touchesm.com/blue-skies-again.mp3" },
+      { title: "Honey in the Morning Mix", artist: "Touché Sessions", url: "https://audio.touchesm.com/honey-in-the-morning-mix.mp3" },
+      { title: "Honey in the Morning", artist: "Touché Sessions", url: "https://audio.touchesm.com/honey-in-the-morning.mp3" },
+      { title: "Mint Flavour", artist: "Touché Sessions", url: "https://audio.touchesm.com/mint-flavour.mp3" },
+      { title: "Mint on the Rim", artist: "Touché Sessions", url: "https://audio.touchesm.com/mint-on-the-rim.mp3" },
+      { title: "Paper Sun Parade Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-sun-parade-remix.mp3" },
+      { title: "Paper Sun Parade", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-sun-parade.mp3" },
+      { title: "Paper Sun Redo", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-sun-redo.mp3" },
+      { title: "Sun On My Shoulders", artist: "Touché Sessions", url: "https://audio.touchesm.com/sun-on-my-shoulders.mp3" },
+      { title: "Sunny Shoulders", artist: "Touché Sessions", url: "https://audio.touchesm.com/sunny-shoulders.mp3" },
+      { title: "Velvet Turn", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-turn.mp3" },
+      { title: "Velvet Volume", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-volume.mp3" },
       /* alternate takes and remixes */
       { title: "Hands Up Tonight (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight-take-two.mp3" },
-      { title: "Comment Section Heart (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/comment-section-heart-take-two.mp3" }
+      { title: "Comment Section Heart (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/comment-section-heart-take-two.mp3" },
+      { title: "Paper Sun (Take Three)", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-sun-take-three.mp3" }
     ]
   },
   {

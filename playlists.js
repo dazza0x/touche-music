@@ -151,6 +151,12 @@ const PLAYLISTS = [
       { title: "Midnight Workhorse", artist: "Touché Sessions", url: "https://audio.touchesm.com/midnight-workhorse.mp3" },
       { title: "Tide After the Club", artist: "Touché Sessions", url: "https://audio.touchesm.com/tide-after-the-club.mp3" },
       { title: "Palm Wine Radar", artist: "Touché Sessions", url: "https://audio.touchesm.com/palm-wine-radar.mp3" },
+      { title: "Gold in the Air", artist: "Touché Sessions", url: "https://audio.touchesm.com/gold-in-the-air.mp3" },
+      { title: "Gold in the Hair", artist: "Touché Sessions", url: "https://audio.touchesm.com/gold-in-the-hair.mp3" },
+      { title: "Long Wait Till Monday", artist: "Touché Sessions", url: "https://audio.touchesm.com/long-wait-till-monday.mp3" },
+      { title: "Long Way Till Monday", artist: "Touché Sessions", url: "https://audio.touchesm.com/long-way-till-monday.mp3" },
+      { title: "Two-Step Easy v2", artist: "Touché Sessions", url: "https://audio.touchesm.com/two-step-easy-v2.mp3" },
+      { title: "Two-Step Easy", artist: "Touché Sessions", url: "https://audio.touchesm.com/two-step-easy.mp3" },
       /* alternate takes and remixes */
       { title: "Hands Up Tonight (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight-take-two.mp3" },
       { title: "Terraza Dorada (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/terraza-dorada-take-two.mp3" },

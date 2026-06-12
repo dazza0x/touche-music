@@ -168,6 +168,16 @@ const PLAYLISTS = [
     name: "Salon Saturday",
     tracks: [
       /* first takes — different tunes before anything repeats */
+      { title: "Chewing Mint Gum", artist: "Touché Sessions", url: "https://audio.touchesm.com/chewing-mint-gum.mp3" },
+      { title: "Glass Highway", artist: "Touché Sessions", url: "https://audio.touchesm.com/glass-highway.mp3" },
+      { title: "Glass Moon Highway", artist: "Touché Sessions", url: "https://audio.touchesm.com/glass-moon-highway.mp3" },
+      { title: "Mint Gum", artist: "Touché Sessions", url: "https://audio.touchesm.com/mint-gum.mp3" },
+      { title: "Mirrorball Run Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirrorball-run-remix.mp3" },
+      { title: "Mirrorball Run", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirrorball-run.mp3" },
+      { title: "Pina Verde Breaks", artist: "Touché Sessions", url: "https://audio.touchesm.com/pina-verde-breaks.mp3" },
+      { title: "Pina Verde", artist: "Touché Sessions", url: "https://audio.touchesm.com/pina-verde.mp3" },
+      { title: "Sugar Cup", artist: "Touché Sessions", url: "https://audio.touchesm.com/sugar-cup.mp3" },
+      { title: "Sugar on the Cup", artist: "Touché Sessions", url: "https://audio.touchesm.com/sugar-on-the-cup.mp3" }
     ]
   },
   {

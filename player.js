@@ -47,6 +47,16 @@ function renderPlaylists(){
     b.onclick = ()=> selectPlaylist(i);
     nav.appendChild(b);
   });
+  /* the dropdown mirrors the chips for small screens */
+  const sel = $('plSelect');
+  sel.innerHTML = '';
+  PLAYLISTS.forEach((p,i)=>{
+    const o = document.createElement('option');
+    o.value = i;
+    o.textContent = p.name;
+    sel.appendChild(o);
+  });
+  sel.value = plIndex;
 }
 
 function renderTracks(){
@@ -71,10 +81,22 @@ function renderNow(){
   if (!t){
     $('npTitle').textContent = 'Nothing here yet';
     $('npArtist').textContent = 'Songs added to this playlist will appear shortly';
+    $('barNow').textContent = 'Nothing here yet';
     document.body.classList.remove('playing');
     $('iconPlay').style.display = 'block';
     $('iconPause').style.display = 'none';
     return;
+  }
+  /* slim now-playing line shown in the bar on small screens */
+  if (started){
+    $('barNow').innerHTML = '';
+    $('barNow').append(t.title, ' — ');
+    const a = document.createElement('span');
+    a.className = 'bn-artist';
+    a.textContent = t.artist;
+    $('barNow').appendChild(a);
+  } else {
+    $('barNow').textContent = PLAYLISTS[plIndex].name + ' — tap play';
   }
   $('npTitle').textContent = started ? t.title : 'Choose a playlist';
   $('npArtist').textContent = started ? t.artist : 'Tap play and the music looks after itself';
@@ -161,6 +183,7 @@ $('playBtn').onclick = ()=>{
 };
 $('nextBtn').onclick = nextTrack;
 $('prevBtn').onclick = prevTrack;
+$('plSelect').onchange = e => selectPlaylist(+e.target.value);
 $('shuffleBtn').onclick = e =>{
   shuffle = !shuffle;
   shuffleBag = [];

@@ -116,6 +116,34 @@ nav.playlists::-webkit-scrollbar{display:none}
    justify-content:center would clip the left edge instead) */
 .chip:first-child{margin-left:auto}
 .chip:last-child{margin-right:auto}
+
+/* compact playlist picker — replaces the chips on small screens,
+   where an overflowing row hides most of the playlists */
+.pl-select-wrap{
+  display:none;
+  padding:14px clamp(16px,5vw,56px) 6px;
+}
+.pl-select{
+  width:100%;
+  appearance:none;
+  -webkit-appearance:none;
+  font-family:'Jost',sans-serif;
+  font-size:15px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  color:var(--sage-deep);
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:13px 46px 13px 20px;
+  min-height:48px;
+  cursor:pointer;
+  background-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23577f6c"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat:no-repeat;
+  background-position:right 18px center;
+  background-size:16px;
+}
+.pl-select:focus-visible{outline:2px solid var(--sage);outline-offset:2px}
 .chip{
   flex:0 0 auto;
   border:1px solid var(--line);
@@ -301,6 +329,27 @@ main{
 }
 @media (max-width:640px){
   .volume{display:none}
+}
+
+/* ---------- small screens: dropdown picker, now-playing in the bar ---------- */
+.bar-now{
+  display:none;
+  text-align:center;
+  font-size:14px;
+  letter-spacing:.04em;
+  color:var(--ink);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  margin-bottom:8px;
+}
+.bar-now .bn-artist{color:var(--ink-soft)}
+@media (max-width:640px){
+  nav.playlists{display:none}
+  .pl-select-wrap{display:block}
+  .now{display:none}
+  .bar-now{display:block}
+  .tracks{margin-top:0;padding-bottom:170px}
 }
 .controls{
   display:flex;

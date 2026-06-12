@@ -207,7 +207,11 @@ const PLAYLISTS = [
       { title: "Pina Verde Breaks", artist: "Touché Sessions", url: "https://audio.touchesm.com/pina-verde-breaks.mp3" },
       { title: "Pina Verde", artist: "Touché Sessions", url: "https://audio.touchesm.com/pina-verde.mp3" },
       { title: "Sugar Cup", artist: "Touché Sessions", url: "https://audio.touchesm.com/sugar-cup.mp3" },
-      { title: "Sugar on the Cup", artist: "Touché Sessions", url: "https://audio.touchesm.com/sugar-on-the-cup.mp3" }
+      { title: "Sugar on the Cup", artist: "Touché Sessions", url: "https://audio.touchesm.com/sugar-on-the-cup.mp3" },
+      { title: "Mask On", artist: "Touché Sessions", url: "https://audio.touchesm.com/mask-on.mp3" },
+      { title: "Paper Smile Wrapped", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-smile-wrapped.mp3" },
+      { title: "Paper Smile", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-smile.mp3" },
+      { title: "Smooth Mask", artist: "Touché Sessions", url: "https://audio.touchesm.com/smooth-mask.mp3" }
     ]
   },
   {

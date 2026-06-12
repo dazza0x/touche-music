@@ -111,6 +111,14 @@ const PLAYLISTS = [
       { title: "Comment Section Heart", artist: "Touché Sessions", url: "https://audio.touchesm.com/comment-section-heart.mp3" },
       { title: "Blindside Glow", artist: "Touché Sessions", url: "https://audio.touchesm.com/blindside-glow.mp3" },
       { title: "Back From The Bar", artist: "Touché Sessions", url: "https://audio.touchesm.com/back-from-the-bar.mp3" },
+      { title: "Ashes In Silk Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/ashes-in-silk-remix.mp3" },
+      { title: "Ashes In Silk", artist: "Touché Sessions", url: "https://audio.touchesm.com/ashes-in-silk.mp3" },
+      { title: "Glass in My Hand Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/glass-in-my-hand-remix.mp3" },
+      { title: "Glass in My Hand", artist: "Touché Sessions", url: "https://audio.touchesm.com/glass-in-my-hand.mp3" },
+      { title: "Mango After Dark Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/mango-after-dark-remix.mp3" },
+      { title: "Mango After Dark", artist: "Touché Sessions", url: "https://audio.touchesm.com/mango-after-dark.mp3" },
+      { title: "Palm in Mine Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/palm-in-mine-remix.mp3" },
+      { title: "Palm in Mine", artist: "Touché Sessions", url: "https://audio.touchesm.com/palm-in-mine.mp3" },
       /* alternate takes and remixes */
       { title: "Hands Up Tonight (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight-take-two.mp3" },
       { title: "Comment Section Heart (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/comment-section-heart-take-two.mp3" }

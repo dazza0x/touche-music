@@ -211,7 +211,12 @@ const PLAYLISTS = [
       { title: "Mask On", artist: "Touché Sessions", url: "https://audio.touchesm.com/mask-on.mp3" },
       { title: "Paper Smile Wrapped", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-smile-wrapped.mp3" },
       { title: "Paper Smile", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-smile.mp3" },
-      { title: "Smooth Mask", artist: "Touché Sessions", url: "https://audio.touchesm.com/smooth-mask.mp3" }
+      { title: "Smooth Mask", artist: "Touché Sessions", url: "https://audio.touchesm.com/smooth-mask.mp3" },
+      /* alternate takes and remixes */
+      { title: "Mask On (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/mask-on-take-two.mp3" },
+      { title: "Paper Smile Wrapped (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-smile-wrapped-take-two.mp3" },
+      { title: "Paper Smile (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-smile-take-two.mp3" },
+      { title: "Smooth Mask (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/smooth-mask-take-two.mp3" }
     ]
   },
   {

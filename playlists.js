@@ -177,7 +177,15 @@ const PLAYLISTS = [
       { title: "On the List", artist: "Touché Sessions", url: "https://audio.touchesm.com/on-the-list.mp3" },
       { title: "Raw Games", artist: "Touché Sessions", url: "https://audio.touchesm.com/raw-games.mp3" },
       { title: "Shades Of Midnight", artist: "Touché Sessions", url: "https://audio.touchesm.com/shades-of-midnight.mp3" },
-      { title: "Velvet Game", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-game.mp3" }
+      { title: "Velvet Game", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-game.mp3" },
+      { title: "Candle On The Sink v2", artist: "Touché Sessions", url: "https://audio.touchesm.com/candle-on-the-sink-v2.mp3" },
+      { title: "Candle On The Sink", artist: "Touché Sessions", url: "https://audio.touchesm.com/candle-on-the-sink.mp3" },
+      { title: "Saturday Takes Its Time", artist: "Touché Sessions", url: "https://audio.touchesm.com/saturday-takes-its-time.mp3" },
+      { title: "Saturday Time", artist: "Touché Sessions", url: "https://audio.touchesm.com/saturday-time.mp3" },
+      { title: "The Chair Knows v2", artist: "Touché Sessions", url: "https://audio.touchesm.com/the-chair-knows-v2.mp3" },
+      { title: "The Chair Knows", artist: "Touché Sessions", url: "https://audio.touchesm.com/the-chair-knows.mp3" },
+      { title: "Velvet Marimba v2", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-marimba-v2.mp3" },
+      { title: "Velvet Marimba", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-marimba.mp3" }
     ]
   },
   {

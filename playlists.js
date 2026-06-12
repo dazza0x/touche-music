@@ -65,6 +65,7 @@ const PLAYLISTS = [
       { title: "Delete Your Number", artist: "Touché Sessions", url: "https://audio.touchesm.com/delete-your-number.mp3" },
       { title: "Last Train Out", artist: "Touché Sessions", url: "https://audio.touchesm.com/last-train-out.mp3" },
       { title: "Glowstick Weekend", artist: "Touché Sessions", url: "https://audio.touchesm.com/glowstick-weekend.mp3" },
+      { title: "Hands Up Tonight", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight.mp3" },
       /* alternate takes and remixes */
       { title: "Sunlit Table for Two (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/sunlit-table-for-two-take-two.mp3" },
       { title: "Paper Cup Sun (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/paper-cup-sun-take-two.mp3" },
@@ -107,7 +108,6 @@ const PLAYLISTS = [
     name: "Salon Pop",
     tracks: [
       /* first takes — different tunes before anything repeats */
-      { title: "Hands Up Tonight", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight.mp3" },
       { title: "Comment Section Heart", artist: "Touché Sessions", url: "https://audio.touchesm.com/comment-section-heart.mp3" },
       { title: "Blindside Glow", artist: "Touché Sessions", url: "https://audio.touchesm.com/blindside-glow.mp3" },
       { title: "Back From The Bar", artist: "Touché Sessions", url: "https://audio.touchesm.com/back-from-the-bar.mp3" },

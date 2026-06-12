@@ -150,6 +150,18 @@ const PLAYLISTS = [
     name: "Salon Sounds",
     tracks: [
       /* first takes — different tunes before anything repeats */
+      { title: "Fresh out the Chair Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/fresh-out-the-chair-remix.mp3" },
+      { title: "Fresh out the Chair", artist: "Touché Sessions", url: "https://audio.touchesm.com/fresh-out-the-chair.mp3" },
+      { title: "Midnight Velvet", artist: "Touché Sessions", url: "https://audio.touchesm.com/midnight-velvet.mp3" },
+      { title: "Mirror on Me Take 2", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirror-on-me-take-2.mp3" },
+      { title: "Mirror on Me", artist: "Touché Sessions", url: "https://audio.touchesm.com/mirror-on-me.mp3" },
+      { title: "New Shade of Me Bounce", artist: "Touché Sessions", url: "https://audio.touchesm.com/new-shade-of-me-bounce.mp3" },
+      { title: "New Shade of Me", artist: "Touché Sessions", url: "https://audio.touchesm.com/new-shade-of-me.mp3" },
+      { title: "On the List Remix", artist: "Touché Sessions", url: "https://audio.touchesm.com/on-the-list-remix.mp3" },
+      { title: "On the List", artist: "Touché Sessions", url: "https://audio.touchesm.com/on-the-list.mp3" },
+      { title: "Raw Games", artist: "Touché Sessions", url: "https://audio.touchesm.com/raw-games.mp3" },
+      { title: "Shades Of Midnight", artist: "Touché Sessions", url: "https://audio.touchesm.com/shades-of-midnight.mp3" },
+      { title: "Velvet Game", artist: "Touché Sessions", url: "https://audio.touchesm.com/velvet-game.mp3" }
     ]
   },
   {

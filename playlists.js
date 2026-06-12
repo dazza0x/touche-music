@@ -20,7 +20,7 @@
    ===================================================================== */
 const PLAYLISTS = [
   {
-    name: "The Radio",
+    name: "Salon Radio",
     tracks: [
       /* first takes — different tunes before anything repeats */
       { title: "Sunlit Table for Two", artist: "Touché Sessions", url: "https://audio.touchesm.com/sunlit-table-for-two.mp3" },
@@ -104,7 +104,7 @@ const PLAYLISTS = [
     ]
   },
   {
-    name: "Upbeat Pop",
+    name: "Salon Pop",
     tracks: [
       /* first takes — different tunes before anything repeats */
       { title: "Hands Up Tonight", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight.mp3" },
@@ -117,7 +117,7 @@ const PLAYLISTS = [
     ]
   },
   {
-    name: "Ibiza Party",
+    name: "Salon Party",
     tracks: [
       /* first takes — different tunes before anything repeats */
       { title: "Hands Up Tonight", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-tonight.mp3" },
@@ -136,6 +136,18 @@ const PLAYLISTS = [
       { title: "Tide After the Club (Take Two)", artist: "Touché Sessions", url: "https://audio.touchesm.com/tide-after-the-club-take-two.mp3" },
       { title: "Hands Up Higher (Take Three)", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-higher-take-three.mp3" },
       { title: "Hands Up Higher (Take Four)", artist: "Touché Sessions", url: "https://audio.touchesm.com/hands-up-higher-take-four.mp3" }
+    ]
+  },
+  {
+    name: "Salon Sounds",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
+    ]
+  },
+  {
+    name: "Salon Saturday",
+    tracks: [
+      /* first takes — different tunes before anything repeats */
     ]
   },
   {

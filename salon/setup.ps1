@@ -28,7 +28,13 @@ try {
   $fresh = (Invoke-WebRequest "$site/salon/sync.ps1?t=$((Get-Date).Ticks)" -UseBasicParsing).Content
   if ($fresh -match 'playlists\.js') { Set-Content -Path "$root\sync.ps1" -Value $fresh -Encoding UTF8 }
 } catch {}
-& powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$root\sync.ps1"
+if (Test-Path "$root\sync.ps1") {
+  & powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$root\sync.ps1"
+} else {
+  # no fresh download and no cached copy (e.g. first run with no internet) —
+  # record it so the failure is visible instead of silent
+  Add-Content -Path "$root\sync-log.txt" -Value ("{0}  FAILED - could not download sync.ps1 from {1}/salon/sync.ps1 and no cached copy exists" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $site)
+}
 '@ | Set-Content -Path "$root\bootstrap.ps1" -Encoding UTF8
 
 # file sharing only works on Private networks
@@ -70,7 +76,14 @@ Write-Host '- daily sync task installed (07:30 and at start-up)'
 # first sync now — downloads the whole library, so allow several minutes
 Write-Host '- downloading the music library (this first run takes a while)...'
 & powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$root\bootstrap.ps1"
-Get-Content "$root\sync-log.txt" -Tail 1
+if (Test-Path "$root\sync-log.txt") {
+  Get-Content "$root\sync-log.txt" -Tail 1
+} else {
+  Write-Host '- WARNING: the first sync did not finish (no sync-log.txt yet).'
+  Write-Host '  The scheduled task will retry at 07:30 and at the next start-up.'
+  Write-Host '  To run it again now and see any error, use:'
+  Write-Host "    powershell -NoProfile -ExecutionPolicy Bypass -File $root\bootstrap.ps1"
+}
 
 Write-Host ''
 Write-Host '=============================================================='
